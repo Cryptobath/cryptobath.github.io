@@ -22,7 +22,7 @@
                 background-image: url(img/Bitcoin-backgrounds.png);
             }
 
-        }
+}
         body {
             min-height: 100vh;
             background-image: url("img/maxresdefault.jpg");
