@@ -1,2 +1,61 @@
-# cryptobath.github.com
-Nettside
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CryptoBath</title>
+    <style> body {
+        margin: 0;
+        background-color: #f2f2f2;
+    }
+    nav {
+        background-color: #444059;
+    }
+    nav a {
+        display: inline-block;
+        color: #b4b3bd;
+        font-family: "Open sans", Helvetica, Arial, sans-serif;
+        padding: 22px 12px 22px 12px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: white;
+    }
+    .active {
+        color: white;
+        border-bottom: 4px solid orangered;
+    }</style>
+</head>
+<body>
+<nav>
+    <a href="index_1.html"><b>Forsiden</b></a>
+    <a href="mining.html"><b>Mining</b></a>
+    <a href="prices.html"><b>Prices</b></a>
+    <a href="guides.html"><b>Guides</b></a>
+</nav>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Bitcoin" data-widget-id="922233340538900480">#Bitcoin Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Neo" data-widget-id="922231391986814977">#Neo Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Ethereum" data-widget-id="922233565504589824">#Ethereum Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Zcash" data-widget-id="922233471858364417">#Zcash Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Dash" data-widget-id="922233675407912960">#Dash Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Zencash" data-widget-id="922233838729916416">#Zencash Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Ubiq" data-widget-id="922234172147724288">#Ubiq Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/Monero" data-widget-id="922234377358233600">#Monero Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</body>
+</html>
