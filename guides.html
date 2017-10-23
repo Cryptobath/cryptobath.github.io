@@ -24,7 +24,20 @@
     .active {
         color: white;
         border-bottom: 4px solid orangered;
-    }</style>
+    }
+    @keyframes catwalk {
+        to{
+            background-position: 0-16000px;
+        }
+    }
+    .Neo {
+        background-image: url("img/animasjon1.png");
+        height: 500px;
+        width: 500px;
+        animation: catwalk 4s steps(32) infinite;
+        margin: 200px;
+    }
+    #k1 { animation-delay: 5s; }</style>
 </head>
 <body>
 <nav>
@@ -33,7 +46,9 @@
 <a href="prices.html"><b>Prices</b></a>
 <a href="news.html"><b>News</b></a>
 </nav>
-
+<div class="right" id="k1">
+    <div class="Neo"></div>
+</div>
 <h1><b>Mining guides</b></h1>
 <a href="https://www.cryptocompare.com/mining/guides/how-to-mine-ethereum/"><b>Ethereum mining Guide</b></a>
 <p></p>
@@ -59,12 +74,6 @@
 <a href="https://www.cryptocompare.com/mining/guides/what-is-proof-of-stake/"><b>What is POS</b></a>
 <p></p>
 <a href="https://www.cryptocompare.com/mining/guides/what-is-proof-of-work/"><b>What is POW</b></a>
-
-
-
-
 </body>
 </html>
-
-
 
