@@ -5,30 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CryptoBath</title>
     <style>
+
+        @media screen and (min-width : 750px) {
+            #content{float:left;width:60%;}
+            #sidebar{float:right;width:35%}
+        }
+
+        @media screen and (min-width : 481px) and (max-width : 749px) {
+            #content{width:95%;}
+            #sidebar{width:95%;}
+        }
         @keyframes slideIt {
             0% {
-                background-image: url(img/3.png);
+
             }
-            20% {
+            25% {
                 background-image: url(img/4.png);
             }
-            40% {
+            50% {
                 background-image: url(img/5.png);
             }
-            60% {
-                background-image: url(img/6.png);
-            }
-            80% {
+            75% {
                 background-image: url(img/Bitcoin-backgrounds.png);
             }
+        100%{
+            background-image: url(img/3.png);
+        }
 
         }
         body {
             min-height: 100vh;
-            background-image: url("img/maxresdefault.jpg");
+            background-image: url("img/3.png");
             background-size: cover;
             background-position: center center;
-            animation: slideIt 8s infinite;
+            animation: slideIt 20s infinite;
         }
         a {
             background-color: deeppink;
@@ -71,7 +81,7 @@
             background-image: url("http://cryptocurrencybitcoinnews.com/wp-content/uploads/2016/01/bitcoin-cryptocurrency-hack.jpg");
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: move steps(30) 6s infinite;
+            animation: move steps(60) 6s infinite;
         }
 
     </style>
@@ -82,5 +92,7 @@
 <a href="prices.html"><b>Prices</b></a>
 <a href="guides.html"><b>Guides</b></a>
 <a href="news.html"><b>News</b></a>
+<a href="Wallpaper.html"><b>Wallpaper</b></a>
+<a href="Crowdsale.html"><b>Crowdsale</b></a>
 </body>
 </html>
