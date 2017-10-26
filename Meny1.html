@@ -3,7 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
-    <style>
+    <style>@media screen and (min-width : 750px) {
+        #content{float:left;width:60%;}
+        #sidebar{float:right;width:35%}
+    }
+
+    @media screen and (min-width : 481px) and (max-width : 749px) {
+        #content{width:95%;}
+        #sidebar{width:95%;}
+    }
+    body {
+        min-height: 100vh;
+        background-image: url("img/bilder/3.png");
+        background-size: cover;
+        background-position: center center;
+    }
+        body {margin: 0;}
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {background-color: #4CAF50;}
+
+        ul.topnav li.right {float: right;}
+
+        @media screen and (max-width: 600px){
+            ul.topnav li.right,
+            ul.topnav li {float: none;}
+        }
         ul {
             list-style-type: none;
             margin: 0;
@@ -35,7 +79,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #333333;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -63,7 +107,8 @@
     </style>
 </head>
 <body>
-<ul>
+<div style="padding:0 16px;">
+    <ul class="topnav">
     <li><a href="index.html">Home</a></li>
     <li><a href="mining.html">Mining</a></li>
     <li><a href="prices.html">Prices</a></li>
@@ -79,6 +124,8 @@
         </div>
     </li>
     <li><a href="Wallpaper.html">Wallpaper</a> </li>
+        <li><a href="Meny1.html">Meny1</a></li>
 </ul>
+</div>
 </body>
 </html>
