@@ -17,18 +17,18 @@
       <file leaf-file-name="forside.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forside.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+            <state relative-caret-position="816">
+              <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="1088">
+              <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -37,8 +37,8 @@
       <file leaf-file-name="mining.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+            <state relative-caret-position="731">
+              <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,8 @@
       <file leaf-file-name="prices.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prices.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+            <state relative-caret-position="816">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,27 +67,37 @@
       <file leaf-file-name="Wallpaper.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Wallpaper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+            <state relative-caret-position="442">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crowdsale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+            <state relative-caret-position="918">
+              <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
               <folding>
-                <element signature="e#1713#1719#0" expanded="true" />
-                <element signature="e#2508#2514#0" expanded="true" />
-                <element signature="e#2984#2990#0" expanded="true" />
-                <element signature="e#2991#2997#0" expanded="true" />
-                <element signature="e#3518#3524#0" expanded="true" />
-                <element signature="e#3731#3737#0" expanded="true" />
-                <element signature="e#3815#3821#0" expanded="true" />
+                <element signature="e#1848#1854#0" expanded="true" />
+                <element signature="e#2643#2649#0" expanded="true" />
+                <element signature="e#3119#3125#0" expanded="true" />
+                <element signature="e#3126#3132#0" expanded="true" />
+                <element signature="e#3653#3659#0" expanded="true" />
+                <element signature="e#3866#3872#0" expanded="true" />
+                <element signature="e#3950#3956#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,14 +124,15 @@
         <option value="$PROJECT_DIR$/guides.html" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/test2.html" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/mining.html" />
         <option value="$PROJECT_DIR$/prices.html" />
         <option value="$PROJECT_DIR$/news.html" />
-        <option value="$PROJECT_DIR$/Wallpaper.html" />
         <option value="$PROJECT_DIR$/forside2.html" />
-        <option value="$PROJECT_DIR$/Crowdsale.html" />
+        <option value="$PROJECT_DIR$/forside.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/mining.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/Wallpaper.html" />
+        <option value="$PROJECT_DIR$/Crowdsale.html" />
       </list>
     </option>
   </component>
@@ -152,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,11 +175,24 @@
               <item name="cryptobath.github.com" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cryptobath.github.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryptobath.github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="logoer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryptobath.github.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryptobath.github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="pdfer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,6 +207,7 @@
       <recent name="https://www.buriedone.com/BuriedUI/index.html" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oskar\Desktop\It\cryptobath.github.com\img\pdfer" />
       <recent name="C:\Users\oskar\Desktop\It\cryptobath.github.com\img" />
       <recent name="C:\Users\oskar\Desktop\It\cryptobath.github.com" />
       <recent name="C:\Users\oskar\Desktop\It\cryptobath.github.com\img\klesbutikk bilder" />
@@ -217,11 +241,13 @@
       <workItem from="1508797164746" duration="22420000" />
       <workItem from="1508958286465" duration="3382000" />
       <workItem from="1508962723818" duration="4458000" />
+      <workItem from="1509005476612" duration="1647000" />
+      <workItem from="1509016616962" duration="468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40974000" />
+    <option name="totallyTimeSpent" value="43089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -255,22 +281,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forside.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prices.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -300,13 +310,13 @@
         <state relative-caret-position="68">
           <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
           <folding>
-            <element signature="e#1713#1719#0" expanded="true" />
-            <element signature="e#2508#2514#0" expanded="true" />
-            <element signature="e#2984#2990#0" expanded="true" />
-            <element signature="e#2991#2997#0" expanded="true" />
-            <element signature="e#3518#3524#0" expanded="true" />
-            <element signature="e#3731#3737#0" expanded="true" />
-            <element signature="e#3815#3821#0" expanded="true" />
+            <element signature="e#1848#1854#0" expanded="true" />
+            <element signature="e#2643#2649#0" expanded="true" />
+            <element signature="e#3119#3125#0" expanded="true" />
+            <element signature="e#3126#3132#0" expanded="true" />
+            <element signature="e#3653#3659#0" expanded="true" />
+            <element signature="e#3866#3872#0" expanded="true" />
+            <element signature="e#3950#3956#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -364,13 +374,13 @@
         <state relative-caret-position="221">
           <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <element signature="e#1713#1719#0" expanded="true" />
-            <element signature="e#2508#2514#0" expanded="true" />
-            <element signature="e#2984#2990#0" expanded="true" />
-            <element signature="e#2991#2997#0" expanded="true" />
-            <element signature="e#3518#3524#0" expanded="true" />
-            <element signature="e#3731#3737#0" expanded="true" />
-            <element signature="e#3815#3821#0" expanded="true" />
+            <element signature="e#1848#1854#0" expanded="true" />
+            <element signature="e#2643#2649#0" expanded="true" />
+            <element signature="e#3119#3125#0" expanded="true" />
+            <element signature="e#3126#3132#0" expanded="true" />
+            <element signature="e#3653#3659#0" expanded="true" />
+            <element signature="e#3866#3872#0" expanded="true" />
+            <element signature="e#3950#3956#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,34 +529,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/6.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img/3.png" />
+    <entry file="file://$PROJECT_DIR$/img/4.png" />
+    <entry file="file://$PROJECT_DIR$/img/5.png" />
+    <entry file="file://$PROJECT_DIR$/img/6.png" />
     <entry file="file://$PROJECT_DIR$/wallpaper2.html" />
     <entry file="file://$PROJECT_DIR$/klesbutikk.json" />
     <entry file="file://$PROJECT_DIR$/Filer til klesbutikk.html" />
     <entry file="file://$PROJECT_DIR$/Min Side.html" />
+    <entry file="file://$PROJECT_DIR$/img/LOGO-Droplet-01 – Kopi.png" />
+    <entry file="file://$PROJECT_DIR$/img/Droplet png1.png" />
+    <entry file="file://$PROJECT_DIR$/img/Droplet png2.png" />
+    <entry file="file://$PROJECT_DIR$/img/Droplet png.png" />
+    <entry file="file://$PROJECT_DIR$/forside.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prices.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        <state relative-caret-position="816">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -559,71 +581,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wallpaper.html">
+    <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/LOGO-Droplet-01 – Kopi.png">
+    <entry file="file://$PROJECT_DIR$/img/logoer/Droplet coin 2-01.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/Droplet png1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/Droplet png2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/Droplet png.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/Wallpaper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crowdsale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+        <state relative-caret-position="918">
+          <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
           <folding>
-            <element signature="e#1713#1719#0" expanded="true" />
-            <element signature="e#2508#2514#0" expanded="true" />
-            <element signature="e#2984#2990#0" expanded="true" />
-            <element signature="e#2991#2997#0" expanded="true" />
-            <element signature="e#3518#3524#0" expanded="true" />
-            <element signature="e#3731#3737#0" expanded="true" />
-            <element signature="e#3815#3821#0" expanded="true" />
+            <element signature="e#1848#1854#0" expanded="true" />
+            <element signature="e#2643#2649#0" expanded="true" />
+            <element signature="e#3119#3125#0" expanded="true" />
+            <element signature="e#3126#3132#0" expanded="true" />
+            <element signature="e#3653#3659#0" expanded="true" />
+            <element signature="e#3866#3872#0" expanded="true" />
+            <element signature="e#3950#3956#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forside.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
