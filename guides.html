@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>CryptoBath</title>
-    <style> body {
+    <style>@media screen and (min-width : 750px) {
+        #content{float:left;width:60%;}
+        #sidebar{float:right;width:35%}
+    }
+
+    @media screen and (min-width : 481px) and (max-width : 749px) {
+        #content{width:95%;}
+        #sidebar{width:95%;}
+    }
+        body {
         margin: 0;
         background-color: #f2f2f2;
     }
@@ -37,18 +46,83 @@
         animation: catwalk 4s steps(32) infinite;
         margin: 200px;
     }
-    #k1 { animation-delay: 5s; }</style>
+    #k1 { animation-delay: 5s; }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
 </head>
 <body>
-<nav>
-<a href="index.html"><b>Forsiden</b></a>
-<a href="mining.html"><b>Mining</b></a>
-<a href="prices.html"><b>Prices</b></a>
-<a href="news.html"><b>News</b></a>
-    <a href="Wallpaper.html"><b>Wallpaper</b></a>
-    <a href="Crowdsale.html"><b>Crowdsale</b></a>
-    <a href="buy&sell.html"><b>Buy-Sell</b></a>
-</nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mining.html">Mining</a></li>
+    <li><a href="prices.html">Prices</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="guides.html">Guides</a></li>
+    <li><a href="Crowdsale.html">Crowdsale</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Buy&Sell</a>
+        <div class="dropdown-content">
+            <a href="buy&sell.html">Buy&Sell(Not ready yet)</a>
+            <a href="https://localbitcoins.com/">Bitcoin</a>
+            <a href="https://localethereum.com/">Ethereum</a>
+        </div>
+    </li>
+    <li><a href="Wallpaper.html">Wallpaper</a> </li>
+</ul>
 <div class="right" id="k1">
     <div class="Neo"></div>
 </div>
