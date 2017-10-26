@@ -113,6 +113,37 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333333;
+        color: white;
+        text-align: center;
+    }
+    body {
+        margin: 0;
+    }
+    html, body {
+        height: 100%;
+    }
+    .page-wrap {
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -50px;
+    }
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+    .site-footer, .page-wrap:after {
+        height: 50px;
+    }
+    .site-footer {
+        background: #333333 ;
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -134,21 +165,34 @@
             </div>
         </li>
         <li><a href="Wallpaper.html">Wallpaper</a> </li>
-        <li><a href="Meny1.html">Meny1</a></li>
+        <li><a href="Testweb.html">TestWeb</a></li>
     </ul>
 </div>
+<center>
 &nbsp;
 <p></p>
 &nbsp;
 <h1>A MINERS LIFE</h1>
 <p>There are miners all over the world</p>
 <h2>Mining Keywords</h2>
-<li>relaxed</li>
-<li>rich</li>
-<li>Cryptocurrency universe</li>
-<img src="img/bilder/last%20ned.jpeg" width="400" height="350">
-<p> <big>MINERS</big><p><p><a href="https://bitcointalk.org/index.php?topic=1707546.0"><b>Equailhash</b></a>
-<p></p>
-<a href="https://bitcointalk.org/index.php?topic=1433925.0"><b>Ethash</b></a>
+<h3>Relaxed</h3>
+<h3>Rich</h3>
+<h3>Cryptocurrency universe</h3>
+    <h1>Click on the coin you want to mine for download</h1>
+    <a href="https://mega.nz/#F!usQh2bTa!3qp_PaiO-dw3F0mpvLXynA">
+        <img src="img/logoer/zcash%20logo.png" alt="Equailhash" align="center" width="290" height="174" border="0"></a>
+    <a href="https://mega.nz/#F!O4YA2JgD!n2b4iSHQDruEsYUvTQP5_w">
+        <img src="img/logoer/Ethereum%20logo.png" alt="Ethash" align="center" width="300" height="220" border="0"></a>
+</center>
+<div class="page-wrap">
+</div>
+
+<footer class="site-footer">
+    <center>&nbsp; <p> © Copyright 2016-2017 Cryptobath.com. All Rights Reserved. </p>  </center>
+</footer>
+<script>$("#add").on("click", function() {
+    $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo(".page-wrap");
+});
+</script>
 </body>
 </html>

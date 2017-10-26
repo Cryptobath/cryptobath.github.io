@@ -113,6 +113,37 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333333;
+        color: white;
+        text-align: center;
+    }
+    body {
+        margin: 0;
+    }
+    html, body {
+        height: 100%;
+    }
+    .page-wrap {
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -50px;
+    }
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+    .site-footer, .page-wrap:after {
+        height: 50px;
+    }
+    .site-footer {
+        background: #333333 ;
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -133,7 +164,7 @@
             </div>
         </li>
         <li><a href="Wallpaper.html">Wallpaper</a> </li>
-        <li><a href="Meny1.html">Meny1</a></li>
+        <li><a href="Testweb.html">TestWeb</a></li>
     </ul>
 </div>
 &nbsp;
@@ -147,5 +178,19 @@
     <img src="img/symboler/Ethereum%20accepted1.png" alt="Buy or Sell" align="center" border="0"></a>
 <a href="https://www.myetherwallet.com/">
     <img src="img/symboler/logo-myetherwallet-01.png" alt="Buy or Sell" align="center" border="0"></a>
+
+<h1>Buy & Sell</h1>
+<h2>This site will soon be an exchange for you to buy and sell cryptocurrencies for fiat money (USD/EUR/JPY).</h2>
+<h3>But for now, enjoy this animation.</h3>
+<div class="page-wrap">
+</div>
+
+<footer class="site-footer">
+    <center>&nbsp; <p> © Copyright 2016-2017 Cryptobath.com. All Rights Reserved. </p>  </center>
+</footer>
+<script>$("#add").on("click", function() {
+    $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo(".page-wrap");
+});
+</script>
 </body>
 </html>
