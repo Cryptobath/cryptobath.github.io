@@ -77,8 +77,8 @@
       <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crowdsale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="172" column="43" lean-forward="true" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
+            <state relative-caret-position="986">
+              <caret line="163" column="22" lean-forward="false" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
               <folding>
                 <element signature="e#3394#3400#0" expanded="true" />
                 <element signature="e#4461#4467#0" expanded="true" />
@@ -267,12 +267,12 @@
       <workItem from="1509017568642" duration="2910000" />
       <workItem from="1509021050873" duration="2945000" />
       <workItem from="1509024573216" duration="4140000" />
-      <workItem from="1509031831461" duration="1875000" />
+      <workItem from="1509031831461" duration="3310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54959000" />
+    <option name="totallyTimeSpent" value="56394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -678,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crowdsale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="172" column="43" lean-forward="true" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
+        <state relative-caret-position="986">
+          <caret line="163" column="22" lean-forward="false" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
           <folding>
             <element signature="e#3394#3400#0" expanded="true" />
             <element signature="e#4461#4467#0" expanded="true" />
