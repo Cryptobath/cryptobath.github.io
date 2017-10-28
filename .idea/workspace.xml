@@ -57,8 +57,8 @@
       <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="162" column="9" lean-forward="false" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
+            <state relative-caret-position="1003">
+              <caret line="195" column="7" lean-forward="true" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#4648#4654#0" expanded="true" />
@@ -82,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crowdsale.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1122">
@@ -100,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buy&amp;sell.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="buy&amp;sell.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/buy&amp;sell.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="161" column="21" lean-forward="false" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+            <state relative-caret-position="952">
+              <caret line="200" column="75" lean-forward="true" selection-start-line="200" selection-start-column="75" selection-end-line="200" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#4075#4081#0" expanded="true" />
@@ -166,7 +166,6 @@
         <option value="$PROJECT_DIR$/Meny2.html" />
         <option value="$PROJECT_DIR$/Meny1.html" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/buy&amp;sell.html" />
         <option value="$PROJECT_DIR$/Wallpaper.html" />
         <option value="$PROJECT_DIR$/Testweb.html" />
         <option value="$PROJECT_DIR$/Crowdsale.html" />
@@ -175,6 +174,7 @@
         <option value="$PROJECT_DIR$/prices.html" />
         <option value="$PROJECT_DIR$/mining.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/buy&amp;sell.html" />
       </list>
     </option>
   </component>
@@ -279,12 +279,12 @@
       <workItem from="1509031831461" duration="15303000" />
       <workItem from="1509117546464" duration="1254000" />
       <workItem from="1509145727306" duration="5951000" />
-      <workItem from="1509191997585" duration="5036000" />
+      <workItem from="1509191997585" duration="6920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80628000" />
+    <option name="totallyTimeSpent" value="82512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -620,19 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buy&amp;sell.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="161" column="21" lean-forward="false" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4075#4081#0" expanded="true" />
-            <element signature="e#4090#4096#0" expanded="true" />
-            <element signature="e#4105#4111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Wallpaper.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -669,18 +656,6 @@
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#4549#4555#0" expanded="true" />
             <element signature="e#4564#4570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="162" column="9" lean-forward="false" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4648#4654#0" expanded="true" />
-            <element signature="e#4663#4669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -731,6 +706,31 @@
             <element signature="e#6428#6434#0" expanded="true" />
             <element signature="e#6657#6663#0" expanded="true" />
             <element signature="e#6761#6767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="195" column="7" lean-forward="true" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4648#4654#0" expanded="true" />
+            <element signature="e#4663#4669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy&amp;sell.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="200" column="75" lean-forward="true" selection-start-line="200" selection-start-column="75" selection-end-line="200" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4075#4081#0" expanded="true" />
+            <element signature="e#4090#4096#0" expanded="true" />
+            <element signature="e#4105#4111#0" expanded="true" />
           </folding>
         </state>
       </provider>
