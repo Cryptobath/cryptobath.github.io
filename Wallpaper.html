@@ -150,8 +150,21 @@
         background: #333333 ;
         color: white;
     }
+    @keyframes catwalk {
+        to{
+            background-position: 0-16000px;
+        }
+    }
+    .Neo {
+        background-image: url("img/animasjonsbilder/animasjon1.png");
+        height: 500px;
+        width: 500px;
+        animation: catwalk 4s steps(32) infinite;
+        margin: 200px;
+    }
+    #k1 { animation-delay: 5s; }
+    body {margin: 0;}
     </style>
-
 </head>
 <body>
 <div style="padding:0 16px;">
@@ -174,7 +187,9 @@
         <li><a href="Testweb.html">TestWeb</a></li>
     </ul>
 </div>
-
+<div class="right" id="k1">
+    <div class="Neo"></div>
+</div>
 <div class="page-wrap">
 </div>
 
