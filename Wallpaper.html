@@ -176,13 +176,31 @@
         background-image: url("img/animasjonsbilder/animasjon1.png");
         height: 500px;
         width: 500px;
-        animation: catwalk 4s steps(32) infinite;
+        animation: catwalk 6s steps(32) infinite;
         margin: 200px;
     }
     #k1 { animation-delay: 5s; }
     body {margin: 0;}
         .pris {
             color: white;
+        }
+    @keyframes catwalk {
+        to{
+            background-position: 0-16000px;
+        }
+    }
+    .Dpt {
+        background-image: url("img/animasjonsbilder/anmasjon2.png");
+        height: 500px;
+        width: 500px;
+        animation: catwalk 6s steps(32) infinite;
+        margin: 200px;
+    }
+    #k2 { animation-delay: 5s; }
+    body {margin: 0;}
+
+        .t1{
+            color: transparent;
         }
     </style>
 </head>
@@ -207,8 +225,15 @@
         <li><a href="Testweb.html">TestWeb</a></li>
     </ul>
 </div>
-<div class="right" id="k1">
-    <div class="Neo"></div>
+<table>
+    <tr>
+        <th><div class="right" id="k1">
+            <div class="Neo"></div></div></th>
+        <th class="t1">oooooooooooooooooooooooooooooooooooooooooooooooooooo</th>
+        <th><div class="right" id="k2">
+            <div class="Dpt"></div></div></th>
+    </tr>
+</table>
 <table class="pris" style="width:100%">
     <tr>
         <th>Big</th>
@@ -236,7 +261,7 @@
         <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="bitcoinz" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
     </tr>
 </table>
-</div><div class="footer"><strong>© Copyright 2016-2017 Cryptobath.com. All Rights Reserved.</strong>
+    <div class="footer"><strong>© Copyright 2016-2017 Cryptobath.com. All Rights Reserved.</strong>
     <a href="https://www.facebook.com/droplet.coin.3">
         <img src="img/logoer/Facebook-Logo.png" height="30" width="30" alt="Droplet on Facebook"></a>
     <a href="https://twitter.com/Droplet_Coin">
