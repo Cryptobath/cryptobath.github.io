@@ -5,19 +5,18 @@
     <title>database</title>
 </head>
 <body>
-<?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
+<script>var mysql = require('mysql');
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
+var con = mysql.createConnection({
+    host: "35.195.248.119",
+    user: "poetic-dreamer-184617:europe-west1:dropleti7cool",
+    password: "Hundeskit13"
+});
 
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-?>
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+});
+</script>
 </body>
 </html>
