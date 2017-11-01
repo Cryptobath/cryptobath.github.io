@@ -12,7 +12,7 @@
         #content{width:95%;}
         #sidebar{width:95%;}
     }
-    body{
+    .side{
         font: "Times New Roman";
         line-height: 30px;
         background-color: lightgrey;
@@ -20,9 +20,186 @@
         margin: auto;
         padding: 8px;
     }
+    nav {
+        background-color: #444059;
+    }
+    nav a {
+        display: inline-block;
+        color: #b4b3bd;
+        font-family: "Open sans", Helvetica, Arial, sans-serif;
+        padding: 22px 12px 22px 12px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: white;
+    }
+    .active {
+        color: white;
+        border-bottom: 4px solid orangered;
+    }
+    body {margin: 0;}
+
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    ul.topnav li {float: left;}
+
+    ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+    ul.topnav li.right {float: right;}
+
+    @media screen and (max-width: 600px){
+        ul.topnav li.right,
+        ul.topnav li {float: none;}
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /**
+* Demo Styles
+*/
+
+    html {
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding-bottom: 6rem;
+        min-height: 100%;
+        background-color: lightgrey;
+    }
+
+    .demo {
+        margin: 0 auto;
+        padding-top: 64px;
+        max-width: 640px;
+        width: 94%;
+    }
+
+    .demo h1 {
+        margin-top: 0;
+    }
+
+    /**
+     * Footer Styles
+     */
+
+    .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: #333333;
+        text-align: center;
+        color: white;
+    }
+        .foot {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
     </style>
 </head>
 <body>
+<nav class="foot">
+<div style="padding:0 16px;">
+    <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mining.html">Mining</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a class="active" href="news.html">News</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="Crowdsale.html">Crowdsale</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Buy&Sell</a>
+            <div class="dropdown-content">
+                <a href="buy&sell.html">Buy&Sell(Not ready yet)</a>
+                <a href="https://localbitcoins.com/">Bitcoin</a>
+                <a href="https://localethereum.com/">Ethereum</a>
+            </div>
+        </li>
+        <li><a href="Wallpaper.html">Wallpaper</a> </li>
+        <li><a href="Testweb.html">TestWeb</a></li>
+        <li style="float: right"><a href="About%20us.html">About</a></li>
+    </ul>
+</div>
+</nav>
+<nav class="side">
 <h1 align="center">Privacy Policy</h1>
 
 <h5 align="center">Last updated: October 29, 2017</h5>
@@ -78,7 +255,17 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 
 <h4 align="center">Contact Us</h4>
-
 <h4 align="center">If you have any questions about this Privacy Policy, please contact us.</h4>
+    <nav class="foot">
+    <div class="footer"><strong>© Copyright 2016-2017 Cryptobath.com. All Rights Reserved.</strong>
+        <a href="https://www.facebook.com/droplet.coin.3">
+            <img src="img/logoer/Facebook-Logo.png" height="30" width="30" alt="Droplet on Facebook"></a>
+        <a href="https://twitter.com/Droplet_Coin">
+            <img src="img/logoer/twitter.png" height="30" width="30" alt="Droplet on Twitter"></a>
+        <a href="https://www.youtube.com/channel/UChOF3y11_clZDhjWu_Jibyw">
+            <img src="img/logoer/youtube.png" height="30" width="30" alt="Droplet on Youtube"></a>
+        <a href="https://www.reddit.com/user/Droplet_coin/">
+            <img src="img/logoer/Reddit.png" height="30" width="30" alt="Droplet on Reddit"></a></div>
+    </nav>
 </body>
 </html>

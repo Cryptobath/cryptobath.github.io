@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Meny2</title>
@@ -54,6 +51,9 @@
         }
         .boxed2 {
             border: 3px solid green ;
+        }
+        .boxed3 {
+            border: 3px solid green;
         }
         .side {
             max-width: 800px;
@@ -158,6 +158,94 @@
             text-align: center;
             color: white;
         }
+        /* Style the Image Used to Trigger the Modal */
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {opacity: 0.7;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)}
+            to {-webkit-transform:scale(1)}
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+            .modal-content {
+                width: 100%;
+            }
+        }
+        .boxed5 {
+            border: 3px solid red;
+
+        }
     </style>
 </head>
 <body>
@@ -185,42 +273,106 @@
 <div class="side">
 <center>
     &nbsp;
-    <h1>Droplet (DPT)</h1>
+    <h1><b>Droplet (DPT) PRE-SALE</b> </h1>
     <img src="img/logoer/Droplet%20coin%202%20small-01.png" alt="The Droplet that filled the glass..." height="500" width="500">
-    <h2><b>Droplet is having a crowdsale for people to invest in the website, Droplet will be very limited and will act like shares of Cryptobath.com.</b> </h2>
-    <h3 align="left"><b>If you hold 1% of the coins you earn 1% of all earnings from the website, from fees, adds and sponsors.
-        Exactly how you will be paid is not set yet, the choice is between giving out coins to holders or burn coins monthly for increased value.</b></h3>
-    <h3 align="left"><b>The token is called Droplet, and there will be a total supply of 100 000 tokens.
-        Not all of the coins will be sold in this crowdsale, but there will be sales later when the coin is more complete.
-        Therefore this is an opportunity to buy Droplet tokens before it gains its potential value</b></h3>
-    <div class="boxed2">
-        <h2>Have a look at what Droplet is all about</h2>
-            <a href="#myPopup" data-rel="popup" data-position-to="window">
-                <img src="img/bilder/Droplet_DPT.png" alt="Skaret View" style="width:770px;"></a>
+    <h1>Droplet introduction</h1>
+    <h3 align="left"><b>Droplet is an ERC-20 token, Droplet (DPT) stands for Decentralization, Privacy and Trust.
+        Droplet will have its own decentralized Trust shopping platform, it will integrate Znark technology for privacy and it will have its own Decentralized exchange.</b></h3>
 
-            <div data-role="popup" id="myPopup">
-                <img src="img/bilder/Droplet_DPT.png" alt="Skaret View">
-            </div></div>
-    <h2><b>Droplet is an ERC-20 token, so it runs on the Ethereum network as a smartcontract.</b></h2>
-    <h3 align="left"><b>The early crowdsale is small because we only need money to fund further development of the website.
-        In the next crowdsale 29th of december, the price per token will be 0.2 ethereum.
-        The website will be a place where people can buy and sell cryptocurrencies for USD/EUR/JPY in real time,
-        easily, where the site has the money and the cryptocurrencies so you buy instantly and sell instantly with 0.5% fee.</b></h3>
+    <h2 align="left">Privacy</h2>
+    <h4 align="left">Privacy is important in the cryptocurrency space as every transaction is traceable, we will implement Znark technology as soon as we move over to our own blockchain with our own miners and stakers.
+        This will not happen in the near future, but we are already working on a transition from the ERC-20 standard to become an individual Cryptocurrency.</h4>
+
+    <h2 align="left">Decentralization</h2>
+    <h4 align="left">Droplet will have its own decentralized exchange and its own decentralized shopping platform.
+        There is a huge request of decentralized exchanges as the current exchanges are making choices with hardforks of bitcoin and ethereum airdrops that many peopel in the cryptocurrency community doesn't agree upon.
+        The decentralized exchange will be added and open for trading after the end of the second crowdsale that starts the 1st of January.
+        Decentralization was the idea behind the creation of decentralized cryptocurrencies when it was first made, in 2009. We are taking decentralization to the next level with our decentralized platform "Trust" and our decentralized exchange.
+    </h4>
+
+    <h2 align="left">Trust Platform</h2>
+    <h4 align="left"><b>Droplet will have its own platform called "Trust", on "Trust" you can buy and sell what you want and pay each other in Droplet tokens. We like to call the "trust" platform "Ebay 2.0".
+        The platform will be decentralized and private no password or username is required. The platform will supply every new user with a set amount of reputation points, called TRUST.
+        TRUST points will define your account and other users can see your TRUST balance. The reputation points will make it easier to separate theft and fraud from loyal and trustworthy users, they are also required to create or interact with an advertisement.
+        To gain "TRUST", you have to successfully finish an advertisement, you can gain from 1-10 TRUST per advertisement, depending on the price. The more TRUST points you have, the higher up on the list of advertisements you get.
+        When a user has 1000 TRUST or more, the TRUST points can be exchanged for Droplet tokens, with a 1000 for 1 ratio. A user will have a negative TRUST balance if it is suspected for fraud, which makes the user unable to create or interact with advertisements.
+        20% of all Droplet tokens will be locked in until we have the platform up and going, these Droplet tokens will then only be used for exchanging TRUST reputation points.
+        The Trust platform is needed as there is thousands of cryptocurrencies, but very few places to use them. The trust platform enables actual shopping with cryptocurrencies.
+        The TRUST points is our way to reward contributors of the cryptocurrency network, and motivate them and newcomers to use cryptocurrencies on a daily basis.You can read more about the "Trust Platform" and "TRUST" reputation points in our whitepaper.
+    </b></h4>
+
+        <h2>DPT Map</h2>
+        <!-- Trigger the Modal -->
+        <img id="myImg" src="img/bilder/Droplet_DPT.png" alt="Trolltunga, Norway" width="300" height="200">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <script>// Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        </script>
+
+
+    &nbsp;<h2 align="left">Pre-sale information</h2>
+
+    <h4 align="left"><b>This PRE-SALE of Droplet is to fund our start budget so that more developers can be hired, we can pay our rent and start advertising. There will be a total supply of 100 000 tokens, so it will be very limited compared to other coins.
+        25% of the tokens will be sold in the PRE-SALE. There will be a Crowdsale the 1st of January where 25% more will be sold, the price per will then token will be 0.04 ethereum. A total of 50% of Droplet tokens will be sold in our sales.
+        The other 50% is dealt into 2 pieces: 30% for the campaign "development, advertising, travelling and conferences". The last 20% will be locked up until our  Trust platform is built, you can read more about our upcoming Trust Platform in the Whitepaper.
+        This is your opportunity to buy Droplet tokens before they gain their potential value.</b></h4>
+
+
+    <h2 align="left">Contribution information</h2>
+    <h4 align="left"><b>Droplet tokens will be rewarded automatically to the address you sent Ethereum from.
+        Be aware, most exchanges doesn't support the token yet so we recommend you to be using a private wallet and NOT a thirdparty wallet like an exchange or Coinbase.
+        Remember to send Ethereum and not other cryptocurrencies to the adress.</b></h4>
+
     &nbsp;
-    <h2><b>The tokens will be rewarded automatically to the address you sent Ethereum from.</b></h2>
-    <h3 align="left"><b>Be aware, most exchanges doesn't support the token yet so I recommend you to be using a private wallet and NOT a thirdparty wallet like an exchange or Coinbase.
-        Remember to send Ethereum and not other cryptocurrencies to the adress.</b></h3>
     <div class="boxed">
         <h2 id="p1"><b> 0xFBAF07462F0cce59ffEFDFe637254ad4108b5d02 </b></h2><button onclick="copyToClipboard('#p1')">Copy Adress</button>
     </div>
     <p><b>By Sending Ether to the adress above, you agree on<a href="Terms%20and%20Coinditions.html">Terms and Conditions</a>, <a href="Disclaimer.html">Diclaimer</a>.</b></p>
     &nbsp;
-    <h3><b>The Crowdsale is now live and ends the 23. of December.</b></h3>
-    <h3><b>The goal is 500 Ether, once the goal is reached the crowdsale ends.</b></h3>
-    <h3><b>The price per Token is 0.01 Ether.</b></h3>
+    <h3><b>The Pre-sale is now live and ends the 23. of December.</b></h3>
+    <h3><b>The goal is 500 Ether, once the goal is reached the Pre-sale ends.</b></h3>
+    <h3><b>The price per Token is 0.02 Ether.</b></h3>
     &nbsp;
     <div class="boxed1">
-        <h2><b>Here is the Legal agreement of Droplet.</b></h2>
+        <h2><b>Whitepaper</b></h2>
+        &nbsp;
+        <form action="Droplet_whitepaper.pdf" id="button1">
+        </form>
+        <button form="button1">Whitepaper</button>
+    </div>
+&nbsp;
+    <div class="boxed1">
+        <h2><b>Legal Agreement</b></h2>
         &nbsp;
         <form action="1.pdf" id="button1">
         </form>
