@@ -246,6 +246,46 @@
             border: 3px solid red;
 
         }
+
+         .button {
+             display: inline-block;
+             border-radius: 4px;
+             background-color: darkblue;
+             border: none;
+             color: #FFFFFF;
+             text-align: center;
+             font-size: 28px;
+             padding: 20px;
+             width: 200px;
+             transition: all 0.5s;
+             cursor: pointer;
+             margin: 5px;
+         }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
     </style>
 </head>
 <body>
@@ -278,7 +318,9 @@
     <h1>Droplet introduction</h1>
     <h3 align="left"><b>Droplet is an ERC-20 token, Droplet (DPT) stands for Decentralization, Privacy and Trust.
         Droplet will have its own decentralized Trust shopping platform, it will integrate Znark technology for privacy and it will have its own Decentralized exchange.</b></h3>
-
+    <form action="Droplet_whitepaper.pdf" id="button1">
+    </form>
+    <button form="button1" class="button" style="vertical-align:middle"><span>Whitepaper</span></button>
     <h2 align="left">Privacy</h2>
     <h4 align="left">Privacy is important in the cryptocurrency space as every transaction is traceable, we will implement Znark technology as soon as we move over to our own blockchain with our own miners and stakers.
         This will not happen in the near future, but we are already working on a transition from the ERC-20 standard to become an individual Cryptocurrency.</h4>
@@ -362,21 +404,12 @@
     <h3><b>The Pre-sale is now live and ends the 23. of December.</b></h3>
     <h3><b>The goal is 500 Ether, once the goal is reached the Pre-sale ends.</b></h3>
     <h3><b>The price per Token is 0.02 Ether.</b></h3>
-    &nbsp;
-    <div class="boxed1">
-        <h2><b>Whitepaper</b></h2>
-        &nbsp;
-        <form action="Droplet_whitepaper.pdf" id="button1">
-        </form>
-        <button form="button1">Whitepaper</button>
-    </div>
+    &nbsp;&nbsp;
 &nbsp;
-    <div class="boxed1">
-        <h2><b>Legal Agreement</b></h2>
         &nbsp;
         <form action="1.pdf" id="button1">
         </form>
-        <button form="button1">Legal Agreement</button>
+        <button form="button1" class="button" style="vertical-align:middle"><span>Legal Agreement</span></button>
     </div>
     <script>
         function copyToClipboard(element) {
