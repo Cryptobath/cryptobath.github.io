@@ -1,81 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>test</title>
-    <style>/**
- * Demo Styles
- */
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
 
-    html {
-        height: 100%;
-        box-sizing: border-box;
-    }
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
 
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
 
-    body {
-        position: relative;
-        margin: 0;
-        padding-bottom: 6rem;
-        min-height: 100%;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-    }
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
 
-    .demo {
-        margin: 0 auto;
-        padding-top: 64px;
-        max-width: 640px;
-        width: 94%;
-    }
 
-    .demo h1 {
-        margin-top: 0;
-    }
-
-    /**
-     * Footer Styles
-     */
-
-    .footer {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 1rem;
-        background-color: #efefef;
-        text-align: center;
-    }
-    .intro-widget-slider {
-        max-width: 942px;
-        margin: 0 auto;
-        height: 60px;
-        position: relative;
-        margin-top: -40px;
-        margin-bottom: 20px;
-    }
     </style>
 </head>
 <body>
-<div class="intro-widget-slider-current"><span class="btc">BTC 1,152</span><span class="eth">ETH 40,661</span></div>
-<div class="intro-widget-slider">
-    <div class="intro-slider-block">
-        <div class="text-block">ETH 0</div><div class="text-block">ETH 70,000</div>
-    </div>
-    <div class="intro-block-border">
-        <div class="intro-block-bar" style="width:80% !important; min-width:100px !important;">
-            <div class="intro-block-bar-text">
-                <span style="white-space:nowrap;">ETH 55,819</span>
-                <span class="bar-dot">&nbsp;</span>
-            </div>
-        </div>
-    </div>
-</div>
 
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+    <img src="img/bilder/oskar.png" alt="Oskar Berg" style="width:100%">
+    <h1>Oskar Berg</h1>
+    <p class="title">Founder and creator</p>
+    <p>UiO-Finance, Miner and Investor</p>
+    <div style="margin: 24px 0;">
+        <a href="https://www.facebook.com/oskarandreas.berg"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/oskar133"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/os2ar/"><i class="fa fa-instagram"></i></a>
+
+
+    </div>
+    <p><button>Contact</button></p>
+</div>
 
 </body>
 </html>
