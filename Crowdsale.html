@@ -138,13 +138,6 @@
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
-        .demo {
-            margin: 0 auto;
-            padding-top: 64px;
-            max-width: 640px;
-            width: 94%;
-        }
-
         .demo h1 {
             margin-top: 0;
         }
@@ -493,33 +486,6 @@
             padding: 20px 10px 20px ;
             border: solid darkblue;
         }
-        .nypotet {
-            font-family: "Times New Roman";
-            line-height: normal;
-            padding: 20px 10px 20px ;
-            font-size: 80px;
-            align-content: center;
-            justify-content: center;
-            border: 1px solid #696;
-            padding: 60px 0;
-            text-align: center; width: 200px;
-            -webkit-border-radius: 200px;
-            -moz-border-radius: 200px;
-            border-radius: 200px;
-            -webkit-box-shadow: #666 0px 2px 3px;
-            -moz-box-shadow: #666 0px 2px 3px;
-            box-shadow: #666 0px 2px 3px;
-            background: #DBFE2A;
-            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#DBFE2A), to(#4DEE11));
-            background: -webkit-linear-gradient(#DBFE2A, #4DEE11);
-            background: -moz-linear-gradient(#DBFE2A, #4DEE11);
-            background: -ms-linear-gradient(#DBFE2A, #4DEE11);
-            background: -o-linear-gradient(#DBFE2A, #4DEE11);
-            background: linear-gradient(#DBFE2A, #4DEE11);
-            -pie-background: linear-gradient(#DBFE2A, #4DEE11);
-            behavior: url(/pie/PIE.htc);
-
-        }
         .glod {
             font-family: "Times New Roman";
             line-height: normal;
@@ -561,17 +527,30 @@
             border: solid darkblue;
         }
         #myProgress {
-            width: 200px;
+            width: 100%;
             background-color: #ddd;
         }
 
         #myBar {
-            width: 1px;
+            width: 11.5%;
             height: 30px;
             background-color: #4CAF50;
             text-align: center;
             line-height: 30px;
             color: white;
+        }
+        p22 {
+            text-align: center;
+            font-size: 60px;
+            color: white;
+            border: 3px solid darkblue;
+            border-radius: 18px;
+            background-color: darkblue;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            margin: 5px;
+
         }
     </style>
 
@@ -753,9 +732,11 @@
 
 
 <div class="boxed">
-    <h2>Buy Droplet With Ethereum</h2> <div id="myProgress">
-    <div id="myBar">0ETH</div>
-</div>
+    <h2>Buy Droplet With Ethereum</h2>
+    <div align="left" id="myProgress">
+        <div id="myBar">231Eth</div>
+    </div>
+
 
     <h2 class="adress" id="p1"><b> 0xFBAF07462F0cce59ffEFDFe637254ad4108b5d02 </b></h2>
 
@@ -764,8 +745,8 @@
     <button class="clipbpoardknapp" onclick="copyToClipboard('#p1')">Copy Adress</button></div>
 
     <h1 class="glod">Time Left Of Pre-Sale</h1>
-    <div class="nypotet">
-        <p id="demo4"></p>
+    <p22 id="demo"></p>
+
         <script>
             // Set the date we're counting down to
             var countDownDate = new Date("Dec 23, 2017 00:00:00").getTime();
@@ -785,36 +766,17 @@
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Output the result in an element with id="demo4"
-                document.getElementById("demo4").innerHTML = days + "d " + hours + "h "
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
                     + minutes + "m " + seconds + "s ";
 
                 // If the count down is over, write some text
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("demo4").innerHTML = "Pre-sale is over, Public Crowdsale starts January 1st";
+                    document.getElementById("demo").innerHTML = "Pre-Sale has ended, Public sale start Jan 1st";
                 }
             }, 1000);
         </script>
-    </div>
-
-
-    <script>
-        function move() {
-            var elem = document.getElementById("myBar");
-            var width = 10;
-            var id = setInterval(frame, 10000);
-            function frame() {
-                if (width >= 2000) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + 'px';
-                    elem.innerHTML = width * 10  + 'ETH';
-                }
-            }
-        } window.onload = move()
-    </script>
 
     <script>
         function copyToClipboard(element) {

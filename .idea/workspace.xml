@@ -17,14 +17,14 @@
       <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crowdsale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="757" column="6" lean-forward="false" selection-start-line="757" selection-start-column="6" selection-end-line="757" selection-end-column="6" />
+            <state relative-caret-position="799">
+              <caret line="547" column="39" lean-forward="false" selection-start-line="547" selection-start-column="39" selection-end-line="547" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#9;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#th#0;n#tr#0;n#table#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#th#1;n#tr#0;n#table#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#24949#24955#0" expanded="true" />
+                <element signature="e#24018#24024#0" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#b#0;n#p#0;n#div#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#b#0;n#p#0;n#div#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/fun.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -123,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,6 +146,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,11 +241,12 @@
       <workItem from="1509793386888" duration="1661000" />
       <workItem from="1509885732245" duration="1465000" />
       <workItem from="1509889098910" duration="2079000" />
+      <workItem from="1509912638694" duration="1158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174281000" />
+    <option name="totallyTimeSpent" value="175439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -529,21 +530,21 @@
     <entry file="file://$PROJECT_DIR$/fun.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crowdsale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="757" column="6" lean-forward="false" selection-start-line="757" selection-start-column="6" selection-end-line="757" selection-end-column="6" />
+        <state relative-caret-position="799">
+          <caret line="547" column="39" lean-forward="false" selection-start-line="547" selection-start-column="39" selection-end-line="547" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#9;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#th#0;n#tr#0;n#table#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#th#1;n#tr#0;n#table#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#24949#24955#0" expanded="true" />
+            <element signature="e#24018#24024#0" expanded="true" />
             <element signature="n#style#0;n#a#0;n#b#0;n#p#0;n#div#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#b#0;n#p#0;n#div#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
