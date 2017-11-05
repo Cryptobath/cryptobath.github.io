@@ -560,7 +560,19 @@
             padding: 20px 10px 20px ;
             border: solid darkblue;
         }
+        #myProgress {
+            width: 200px;
+            background-color: #ddd;
+        }
 
+        #myBar {
+            width: 1px;
+            height: 30px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
     </style>
 
 
@@ -738,18 +750,22 @@
         Be aware, most exchanges doesn't support the token yet so we recommend you to be using a private wallet and NOT a thirdparty wallet like an exchange or Coinbase.
         Remember to send Ethereum and not other cryptocurrencies to the adress. </b></h4>
 
+
+
 <div class="boxed">
-    <h2>Buy Droplet With Ethereum</h2>
+    <h2>Buy Droplet With Ethereum</h2> <div id="myProgress">
+    <div id="myBar">0ETH</div>
+</div>
 
     <h2 class="adress" id="p1"><b> 0xFBAF07462F0cce59ffEFDFe637254ad4108b5d02 </b></h2>
 
 
     <p><b>By Sending Ether to the adress above, you agree on &nbsp;<a style="font-size: medium" href="Terms%20and%20Coinditions.html">Terms and Conditions</a>, <a style="font-size: medium" href="Disclaimer.html">Disclaimer</a>.</b></p>
     <button class="clipbpoardknapp" onclick="copyToClipboard('#p1')">Copy Adress</button></div>
+
     <h1 class="glod">Time Left Of Pre-Sale</h1>
     <div class="nypotet">
         <p id="demo4"></p>
-
         <script>
             // Set the date we're counting down to
             var countDownDate = new Date("Dec 23, 2017 00:00:00").getTime();
@@ -783,9 +799,22 @@
     </div>
 
 
-
-
-
+    <script>
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 10;
+            var id = setInterval(frame, 10000);
+            function frame() {
+                if (width >= 2000) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + 'px';
+                    elem.innerHTML = width * 10  + 'ETH';
+                }
+            }
+        } window.onload = move()
+    </script>
 
     <script>
         function copyToClipboard(element) {
@@ -799,6 +828,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </center>
 </div>
+
 <nav class="roadmap">
     <h1 class="kuli" align="center">ROADMAP</h1>
 <div class="timeline">
