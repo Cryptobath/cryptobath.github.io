@@ -17,6 +17,13 @@
       <file leaf-file-name="Crowdsale.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crowdsale.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="986">
+              <caret line="597" column="0" lean-forward="false" selection-start-line="597" selection-start-column="0" selection-end-line="597" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#9;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
             <state relative-caret-position="799">
               <caret line="547" column="39" lean-forward="false" selection-start-line="547" selection-start-column="39" selection-end-line="547" selection-end-column="39" />
               <folding>
@@ -31,6 +38,7 @@
                 <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#p#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> parent of 5e738dc... 0
               </folding>
             </state>
           </provider>
@@ -39,8 +47,13 @@
       <file leaf-file-name="fun.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fun.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="272">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+=======
             <state relative-caret-position="51">
               <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+>>>>>>> parent of 5e738dc... 0
               <folding />
             </state>
           </provider>
@@ -123,6 +136,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="Scratches" />
+      <pane id="Scope" />
+=======
+>>>>>>> parent of 5e738dc... 0
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,11 +260,19 @@
       <workItem from="1509885732245" duration="1465000" />
       <workItem from="1509889098910" duration="2079000" />
       <workItem from="1509912638694" duration="1158000" />
+<<<<<<< HEAD
+      <workItem from="1510227189373" duration="24000" />
+=======
+>>>>>>> parent of 5e738dc... 0
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="175463000" />
+=======
     <option name="totallyTimeSpent" value="175439000" />
+>>>>>>> parent of 5e738dc... 0
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -529,14 +555,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fun.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crowdsale.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="986">
+          <caret line="597" column="0" lean-forward="false" selection-start-line="597" selection-start-column="0" selection-end-line="597" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#9;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
         <state relative-caret-position="799">
           <caret line="547" column="39" lean-forward="false" selection-start-line="547" selection-start-column="39" selection-end-line="547" selection-end-column="39" />
           <folding>
@@ -551,6 +584,7 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#p#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> parent of 5e738dc... 0
           </folding>
         </state>
       </provider>
