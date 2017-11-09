@@ -3,176 +3,555 @@
 <head>
     <meta charset="UTF-8">
     <title>Disclaimer</title>
-    <style>@media screen and (min-width : 750px) {
-        #content{float:left;width:60%;}
-        #sidebar{float:right;width:35%}
-    }
+    <style>
+        @media screen and (min-width : 750px) {
+            #content{float:left;width:60%;}
+            #sidebar{float:right;width:35%}
+        }
 
-    @media screen and (min-width : 481px) and (max-width : 749px) {
-        #content{width:95%;}
-        #sidebar{width:95%;}
-    }
-    .side{
-        font: "Times New Roman";
-        line-height: 30px;
-        background-color: lightgrey;
-        max-width: 800px;
-        margin: auto;
-        padding: 8px;
-    }
-    nav {
-        background-color: #444059;
-    }
-    nav a {
-        display: inline-block;
-        color: #b4b3bd;
-        font-family: "Open sans", Helvetica, Arial, sans-serif;
-        padding: 22px 12px 22px 12px;
-        font-size: 18px;
-        text-decoration: none;
-    }
-    nav a:hover {
-        color: white;
-    }
-    .active {
-        color: white;
-        border-bottom: 4px solid orangered;
-    }
-    body {margin: 0;}
+        @media screen and (min-width : 481px) and (max-width : 749px) {
+            #content{width:95%;}
+            #sidebar{width:95%;}
+        }
+        .side {
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        nav {
+            background-color: #444059;
+        }
+        nav a {
+            display: inline-block;
+            color: #b4b3bd;
+            font-family: "Open sans", Helvetica, Arial, sans-serif;
+            padding: 22px 12px 22px 12px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .active {
+            color: white;
+            border-bottom: 4px solid orangered;
+        }
+        .side {
+            background-color: lightgrey;
+        }
+        body {
+            background-color: lightgrey;
+            font: "Times New Roman";
+            line-height: 30px;
+        }
+        .boxed {
+            border: 3px solid grey ;
+            background-color: white;
+            font-family: "Microsoft Office Preview Font";
+            line-height: normal;
 
-    ul.topnav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
+        }
+        .boxed1 {
+            border: 3px solid green ;
+        }
+        .boxed2 {
+            border: 3px solid green ;
+        }
+        .boxed3 {
+            border: 3px solid green;
+        }
+        .side {
+            max-width: 800px;
+            margin: auto;
+            padding: 8px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-    ul.topnav li {float: left;}
+        li {
+            float: left;
+        }
 
-    ul.topnav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-    ul.topnav li a:hover:not(.active) {background-color: #111;}
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
 
-    ul.topnav li.right {float: right;}
+        li.dropdown {
+            display: inline-block;
+        }
 
-    @media screen and (max-width: 600px){
-        ul.topnav li.right,
-        ul.topnav li {float: none;}
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
-    li {
-        float: left;
-    }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: #333333;
+        }
 
-    li a, .dropbtn {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+        .dropdown-content a:hover {background-color: #f1f1f1}
 
-    li a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
-    }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /**
+  * Demo Styles
+  */
 
-    li.dropdown {
-        display: inline-block;
-    }
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #333333;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
+        *,
+        *:before,
+        * {
+            box-sizing: inherit;
+        }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
+        body {
+            position: relative;
+            margin: 0;
+            padding-bottom: 6rem;
+            min-height: 100%;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
 
-    .dropdown-content a:hover {background-color: #f1f1f1}
+        .demo h1 {
+            margin-top: 0;
+        }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+        /**
+         * Footer Styles
+         */
 
-    .dropdown-content a:hover {background-color: #f1f1f1}
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: #333333;
+            text-align: center;
+            color: white;
+        }
+        /* Style the Image Used to Trigger the Modal */
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    /**
-* Demo Styles
-*/
+        #myImg:hover {opacity: 0.7;}
 
-    html {
-        height: 100%;
-        box-sizing: border-box;
-    }
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
 
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+        }
 
-    body {
-        position: relative;
-        margin: 0;
-        padding-bottom: 6rem;
-        min-height: 100%;
-        background-color: lightgrey;
-    }
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
 
-    .demo {
-        margin: 0 auto;
-        padding-top: 64px;
-        max-width: 640px;
-        width: 94%;
-    }
+        /* Add Animation - Zoom in the Modal */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
 
-    .demo h1 {
-        margin-top: 0;
-    }
+        @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)}
+            to {-webkit-transform:scale(1)}
+        }
 
-    /**
-     * Footer Styles
-     */
+        @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+        }
 
-    .footer {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 1rem;
-        background-color: #333333;
-        text-align: center;
-        color: white;
-    }
-    .foot {
-        font-family: "Helvetica Neue", Arial, sans-serif;
-    }
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+            .modal-content {
+                width: 100%;
+            }
+        }
+        .boxed5 {
+            border: 3px solid red;
+
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: darkblue;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .adress {
+            color: darkblue;
+            font-family: "Microsoft Office Preview Font";
+            line-height: normal;
+            font-size: 35px;
+            border: solid grey 2px;
+        }
+        .clipbpoardknapp {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: darkblue;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .roadmap {
+            background-color: #474e5d;
+            font-family: Helvetica, sans-serif;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* The circles on the timeline */
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the container to the left */
+        .left {
+            left: 0;
+        }
+
+        /* Place the container to the right */
+        .right {
+            left: 50%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        /* Fix the circle for containers on the right side */
+        .right::after {
+            left: -16px;
+        }
+
+        /* The actual content */
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media all and (max-width: 600px) {
+            /* Place the timelime to the left */
+            .timeline::after {
+                left: 31px;
+            }
+
+            /* Full-width containers */
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            /* Make sure that all arrows are pointing leftwards */
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .left::after, .right::after {
+                left: 15px;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .right {
+                left: 0%;
+            }
+        }
+        .button1 {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: darkblue;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 21px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            height: 72px;
+        }
+
+        .button1 span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button1 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button1:hover span {
+            padding-right: 25px;
+        }
+
+        .button1:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .kuli {
+            font-family: "Times New Roman";
+            line-height: normal;
+            background-color: white;
+            padding: 20px 10px 20px ;
+            border: solid darkblue;
+        }
+        .glod {
+            font-family: "Times New Roman";
+            line-height: normal;
+            padding: 20px 10px 20px ;
+            font-size: 60px;
+            align-content: center;
+            justify-content: center;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        .team {
+            font-family: "Times New Roman";
+            line-height: normal;
+            background-color: white;
+            padding: 20px 10px 20px ;
+            border: solid darkblue;
+        }
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #myBar {
+            width: 11.5%;
+            height: 30px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+        p22 {
+            text-align: center;
+            font-size: 60px;
+            color: white;
+            border: 3px solid darkblue;
+            border-radius: 18px;
+            background-color: darkblue;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            margin: 5px;
+
+        }
     </style>
 </head>
 <body>
@@ -194,12 +573,20 @@
             </div>
         </li>
         <li><a href="Wallpaper.html">Wallpaper</a> </li>
-        <li><a href="Testweb.html">TestWeb</a></li>
         <li style="float: right"><a href="About%20us.html">About</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Oppgave IT</a>
+            <div class="dropdown-content">
+                <a href="kode%201.html">Kode 1</a>
+                <a href="human.html">Eliminating the human</a>
+                <a href="24timer%20uten.html">24 timer uten</a>
+            </div>
+        </li>
+
     </ul>
 </div>
 </nav>
-<nav class="side">
+<div class="side">
 <h1 align="center">Disclaimer</h1>
 
 <h5 align="center">Last updated: October 29, 2017</h5>
@@ -221,8 +608,8 @@ http://cryptobath.com/ website may contain links to external websites that are n
 Please note that the Cryptobath does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
 
 <h4 align="center">Contact Us</h4>
-    <nav class="foot">
 <h4 align="center">If you have any questions about these Terms, please contact us.</h4>
+   <center>
     <div class="footer"><strong>© Copyright 2016-2017 Cryptobath.com. All Rights Reserved.</strong>
         <a href="https://www.facebook.com/droplet.coin.3">
             <img src="img/logoer/Facebook-Logo.png" height="30" width="30" alt="Droplet on Facebook"></a>
@@ -232,8 +619,7 @@ Please note that the Cryptobath does not guarantee the accuracy, relevance, time
             <img src="img/logoer/youtube.png" height="30" width="30" alt="Droplet on Youtube"></a>
         <a href="https://www.reddit.com/user/Droplet_coin/">
             <img src="img/logoer/Reddit.png" height="30" width="30" alt="Droplet on Reddit"></a>
-        <a class="button43" href="mailto:droplet@gmail.com">
-            <button class="button43"><img align="center" src="img/symboler/mail.png" height="30" width="30"> Give Feedback</button></div>
-    </nav>
+        <a </div></center>
+    </div>
 </body>
 </html>
