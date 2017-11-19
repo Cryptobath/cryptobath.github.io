@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('../img/bakgrunnsbilder/15.jpg');
+            height: 100%;
+            background-position: center;
+            background-position: 0px 10px;
+            background-size: cover;
+            position: relative;
+            color: #09c7ff ;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+            margin: 0;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        /* Left and right column */
+        .column.side {
+            width: 25%;
+        }
+
+        /* Middle column */
+        .column.middle {
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column.side, .column.middle {
+                width: 100%;
+            }
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>BIRK&OSKAR</h1>
+</div>
+
+<div class="topnav">
+    <a href="#">HO IS BIRK?</a>
+    <a href="#">WHAT IS OSKAR?</a>
+    <a href="#">BRO LAW</a>
+    <a href="#">BROTHERHOOD</a>
+    <a style="float: right" href="#">WHAT IS BRO?</a>
+    <a style="float: right" href="index.html">BRO PAGE</a>
+</div>
+
+<div class="row">
+    <div class="column side">
+        <h2>BIRK</h2>
+        <p>BIRK IS FUCKING AWSOME!</p>
+    </div>
+    <div align="center" class="column middle">
+        <h2>BIRK AND OSKAR IS FUCKING AWSOME</h2>
+        <p>WE ARE FUCKING AWSOME AND YOU CAN SUCK OUR DICK</p>
+        <p>SEND US MONEY OR WE WILL FUCKING KILL YOU MATE</p>
+        <h1>BRO TIME</h1>
+        <hr>
+        <p id="demo" style="font-size:30px"></p>
+    </div>
+    <div class="column side">
+        <h2>OSKAR</h2>
+        <p>OSKAR IS FUCKING AWSOME!</p>
+    </div>
+</div>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 11.2017 16:00").getTime();
+
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = "NOW!!";
+        }
+    }, 1000);
+</script>
+<div class="footer">
+    <p><strong>© Copyright 2016-2017 OSKAR.BIRK. All Rights Reserved.</strong></p>
+    <a href="https://www.facebook.com/droplet.coin.3">
+        <img src="../img/logoer/Facebook-Logo.png" height="30" width="30" alt="Droplet on Facebook"></a>
+    <a href="https://twitter.com/Droplet_Coin">
+        <img src="../img/logoer/twitter.png" height="30" width="30" alt="Droplet on Twitter"></a>
+    <a href="https://www.youtube.com/channel/UChOF3y11_clZDhjWu_Jibyw">
+        <img src="../img/logoer/youtube.png" height="30" width="30" alt="Droplet on Youtube"></a>
+    <a href="https://www.reddit.com/user/Droplet_coin/">
+        <img src="../img/logoer/Reddit.png" height="30" width="30" alt="Droplet on Reddit"></a>
+</div>
+</body>
+</html>

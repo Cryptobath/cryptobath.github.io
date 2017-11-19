@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <style>
+        body {
+            color: white;
+            background-color: #333333;
+            max-width: 800px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 5px;
+        }
+        main > article {
+            background-color: peachpuff;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 100px;
+            border-bottom: 5px solid green;
+            transition: 0.2s;
+            background-size: cover;
+        }
+        main:hover > article:nth-child(1) {
+            transform: translate(0px, 100px) rotate(-360deg);
+        }
+        main:hover > article:nth-child(2) {
+            transform: translate(0px, 100px) rotate(-360deg);
+        }
+        main:hover > article:nth-child(3) {
+            transform: translate(0px, 150px) rotate(360deg);
+        }
+        main:hover > article:nth-child(4) {
+            transform: translate(0px, 150px) rotate(360deg);
+        }
+        img {
+            width: 100%;
+        }
+        .firenze1 {
+            background-image: url("img/123123.jpg");
+            grid-column:span 5;
+        }
+        .banana {
+            background-image: url("img/9987.jpg");
+            grid-column:span 5;
+        }
+        .firenze {
+            background-image: url("img/4356789.jpg");
+            grid-column:span 5;
+        }
+        .foranse {
+            background-image: url("img/234567876543.jpeg");
+            grid-column:span 5;
+        }
+        .col-1 {
+            grid-column: span 3;
+        }
+        .col-2 {
+            grid-column: span 3;
+        }
+        .col-3 {
+            grid-column: span 3;
+        }
+        .col-4 {
+            grid-column: span 3;
+        }
+        .col-5 {
+            grid-column: span 3;
+        }
+        .col-6 {
+            grid-column: span 3;
+        }
+        .col-7 {
+            grid-column: span 3;
+        }
+        .row-1 {
+            grid-row: span 2;
+        }
+        .row-2 {
+            grid-row: span 2;
+        }
+        .row-3 {
+            grid-row: span 2;
+        }
+        .row-4 {
+            grid-row: span 2;
+        }
+        .row-5 {
+            grid-row: span 2;
+        }
+        .row-6 {
+            grid-row: span 2;
+        }
+
+        .light {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <article class="banana">JAVA</article>
+    <article class="firenze1">HTML</article>
+    <article class="foranse">CSS</article>
+    <article class="firenze">PHP</article>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix</title>
+    <style>
+        body {
+            background-color: #333333;
+            color: white;
+        }
+        .slidebarbilder1 {
+            margin-top: 600px;
+            display: flex;
+            text-align: center;
+
+        }
+        .slidebarbilder1 > article {
+            border: 2px solid white;
+            height: 200px;
+            flex: 1;
+            transition: 1s;
+        }
+        .slidebarbilder1 > article:hover{
+            flex: 1.5;
+            transform: scaleY(1.1);
+            opacity: 1;
+            z-index: 1000;
+        }
+        .slidebarbilder1 >article:first-child {
+            transform-origin: right;
+        }
+        .slidebarbilder1 >article:last-child {
+            transform-origin: left;
+        }
+        .slidebarbilder1 > article:nth-child(1) {background-image: url("img/1.png"); background-repeat: no-repeat; background-position: center center}
+        .slidebarbilder1 > article:nth-child(2) {background-image: url("img/2.png");  background-repeat: no-repeat; background-position: center center}
+        .slidebarbilder1 > article:nth-child(3) {background-image: url("img/3.png");  background-repeat: no-repeat; background-position: center center}
+        .slidebarbilder1 > article:nth-child(4) {background-image: url("img/4.png");  background-repeat: no-repeat; background-position: center center}
+        .slidebarbilder1 > article:nth-child(5) {background-image: url("img/5.png"); background-repeat: no-repeat; background-position: center center}
+
+    </style>
+</head>
+<body>
+<section class="slidebarbilder1">
+    <article>&nbsp;<p><strong>Quick Transactions</strong></p><img src="img/symboler/klokke symbol.png" height="85" width="84"/></article>
+    <article>&nbsp;<p><strong>Foolproof Payments</strong></p><img src="img/symboler/Avmerke Symbol.png" height="85" width="84"/></article>
+    <article>&nbsp;<p><strong>Secure Purchases</strong></p><img src="img/symboler/Lås symbol.png" height="85" width="84"/></article>
+    <article>&nbsp;<p><strong>Real Value</strong></p><img src="img/symboler/Penger symbol.png" height="85" width="84"/></article>
+</section>
+</body>
+</html>
