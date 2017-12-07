@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>CryptoTool</title>
+</head>
+<style>
+    @media screen and (min-width : 750px) {
+        #content{float:left;width:60%;}
+        #sidebar{float:right;width:35%}
+    }
+
+    @media screen and (min-width : 481px) and (max-width : 749px) {
+        #content{width:95%;}
+        #sidebar{width:95%;}
+    }
+    body {
+       margin: 0;
+    }
+    .iconer {
+        display: flex;
+        background-color:white;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .footer {
+        position: static;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: #333;
+        text-align: center;
+        color: white;
+        font-family: "Yu Gothic UI Semibold";
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #007fc3;
+        font-family: Arial;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #0099e2;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content .header {
+        background: #007fc3;
+        padding: 16px;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color: #0099e2;
+        height: 250px;
+        color: white;
+    }
+
+    .column a {
+        float: none;
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .column a:hover {
+        background-color: #004b76;
+        font-family: Audiowide;
+        font-size: large;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+        .column {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .header {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-family: Audiowide;
+    }
+    button.accordion {
+        background-color: white;
+        color: #444;
+        cursor: pointer;
+        width: 100%;
+        padding: 18px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 30px;
+        transition: 0.4s;
+    }
+
+    button.accordion.active, button.accordion:hover {
+        background-color: #ccc;
+    }
+
+    div.panel {
+        padding: 0 18px;
+        background-color: #cccccc;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+     button.button1 {
+        background-color: #004b76;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        padding: 14px 20px;
+        margin: 8px 0;
+        font-family: Audiowide;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+    }
+
+    @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+    }
+
+    .header-main {
+        color: white;
+        background-color: #007fc3;
+        font-family: Audiowide;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 56px;
+        padding-top: 56px;
+    }
+
+    .container-Announcements {width: 25%;}
+    .container-Prices {width: 25%;}
+    .container-Predictions {width: 25%;}
+    .container-Calculator {width: 25%;}
+    .container-intro {
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        color: white;
+        font-family: "Yu Gothic UI Semibold";
+        font-size: xx-large;
+    }
+    .container-2 {width: 25%;}
+    .container-3 {width: 25%;}
+    .container-4 {width: 25%;}
+    .container-5 {width: 25%;}
+    .container-6 {width: 25%;}
+</style>
+<body>
+<div id="home" class="navbar">
+    <table>
+        <tr>
+            <th>
+                <div class="header">
+                    <table>
+                        <tr>
+                            <td><a style="background-color: transparent" href="#home"><h1 style="padding-right: 20px">CryptoTool</h1></a></td>
+                            <td><a style="background-color: transparent" href="#home"><img src="Droplet%20nettside/img/logo/DPT%20hvit%20logo-01%20(1).png" width="78px" height="67px"></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </th>
+            <th>
+                <a href="#tools">Tools</a>
+                <a href="#news">News</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><strong>Guides</strong>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="header">
+                            <h1 style="font-size: xx-large">CryptoTool</h1>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h2>Mining</h2>
+                                <a href="#">What is mining?</a>
+                                <a href="#">Why would you mine?</a>
+                                <a href="#">How to get started</a>
+                            </div>
+                            <div class="column">
+                                <h2>Trading</h2>
+                                <a href="#">Day trading</a>
+                                <a href="#">Margin trading</a>
+                                <a href="#">Buy&Sell - News</a>
+                            </div>
+                            <div class="column">
+                                <h2>Investing</h2>
+                                <a href="#">Do research</a>
+                                <a href="#">Calculate Risk/Profit</a>
+                                <a href="#">Create a portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+
+<div align="center" class="header-main">
+<p1 style="font-size: 80px"><strong>CryptoTool</strong></p1>
+    <p style="font-size: 30px">Welcome to CryptoTool</p>
+
+<button class="button1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/bilder/team-placeholder.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button class="button1"  type="submit">Login</button>
+        </div>
+    </form>
+</div>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<section class="iconer">
+
+<div class="container-Announcements">
+    <button  style="display:table-cell; vertical-align:middle; text-align:center" class="accordion">&nbsp;<p><strong>Announcements</strong></p><img src="img/CryptoTool/announcements-01.png" height="400" width="400"/></button>
+    <div class="panel">
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/Droplet_Coin?ref_src=twsrc%5Etfw">Tweets by Droplet_Coin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/bitcoincoreorg?ref_src=twsrc%5Etfw">Tweets by bitcoincoreorg</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/NEOnewstoday?ref_src=twsrc%5Etfw">Tweets by NEOnewstoday</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/ethereumproject?ref_src=twsrc%5Etfw">Tweets by ethereumproject</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/zcashco?ref_src=twsrc%5Etfw">Tweets by zcashco</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/Dashpay?ref_src=twsrc%5Etfw">Tweets by Dashpay</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/zencashofficial?ref_src=twsrc%5Etfw">Tweets by zencashofficial</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+       <a class="twitter-timeline" data-width="600" data-height="300" data-theme="dark" data-link-color="#E95F28" href="https://twitter.com/monerocurrency?ref_src=twsrc%5Etfw">Tweets by monerocurrency</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></div>
+
+<div class="container-Prices">
+    <button  style="display:table-cell; vertical-align:middle; text-align:center" class="accordion">&nbsp;<p><strong>Prices</strong></p><img src="img/CryptoTool/priser-01.png" height="400" width="400"/></button>
+    <div class="panel">
+
+        <table class="priser-live" style="width:100%">
+            <tr>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="neo" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                </tr>
+            <tr>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="monero" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                </tr>
+            <tr>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="zcash" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="zencash" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+            </tr>
+            <tr>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="dash" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                <td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="walton" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></td>
+                 </tr>
+        </table>
+    </div></div>
+
+<div class="container-Predictions">
+    <button  style="display:table-cell; vertical-align:middle; text-align:center" class="accordion">&nbsp;<p><strong>Predictions</strong></p><img src="img/CryptoTool/icon-charts2-01.png" height="400" width="400"/></button>
+    <div class="panel">
+        <iframe src="https://www.tradingview.com/chart/IOTBTC/QFefMzTj-IOTA-Bullish-5-0-A-Parabolic-State/" height="500" width="600" align="center"></iframe>
+        <iframe src="https://www.tradingview.com/chart/BTCUSD/roUCyXGe-Bitcoin-Cyclical-Measurements/" height="500" width="600" align="center"></iframe>
+        <iframe src="https://www.tradingview.com/chart/IOTUSD/CLZtAJC6-IOTA-BUY-If-you-missed-the-move/" height="500" width="600" align="center"></iframe>
+        <iframe src="https://www.tradingview.com/chart/NEOBTC/kbtr4QAg-Neo-Bullish-Divergence/" height="500" width="600" align="center"></iframe>
+    </div></div>
+
+<div class="container-Calculator">
+    <button  style="display:table-cell; vertical-align:middle; text-align:center" class="accordion">&nbsp;<p><strong>Calculator</strong></p><img class="img4" src="img/CryptoTool/calculator-01.png" height="400" width="400"/></button>
+    <div class="panel">
+        <script type="text/javascript" src="https://www.cryptonator.com/ui/js/widget/calc_widget.js"></script>
+    </div></div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    }
+</script>
+</section>
+
+<iframe src="https://www.tradingview.com/chart/NEOBTC/kbtr4QAg-Neo-Bullish-Divergence/" height="1440" width="2560" align="center"></iframe>
+
+<div class="footer"><strong>© Copyright 2017 CryptoTool.tools. All Rights Reserved.</strong>
+    <a href="#">
+        <img src="img/logoer/Facebook-Logo.png" height="30" width="30" alt="Droplet on Facebook"></a>
+    <a href="#">
+        <img src="img/logoer/twitter.png" height="30" width="30" alt="Droplet on Twitter"></a>
+    <a href="#">
+        <img src="img/logoer/youtube.png" height="30" width="30" alt="Droplet on Youtube"></a>
+    <a href="#">
+        <img src="img/logoer/Reddit.png" height="30" width="30" alt="Droplet on Reddit"></a>
+</div>
+</body>
+</html>
