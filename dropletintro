@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>front page</title>
+    <style>
+        body {
+            background: #060e1b;
+            overflow: hidden;
+        }
+
+        #canvas {
+        //opacity: 0.5;
+
+        }
+
+        #cursor {
+            cursor: none;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-animation-name: intro; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+            animation-name: intro;
+            animation-duration: 5s;
+            z-index: 100;
+            animation-fill-mode: forwards;
+        }
+        @media screen and  (max-height: 1440px) and  (max-width: 2560px){
+        .centeredtext {
+            font-family: sans-serif;
+            color: white;
+            font-size: 60px;
+            z-index: 100;
+            position: absolute;
+            top: 75%;
+            left: 45%;
+            -webkit-animation-name: intro; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+            animation-name: intro;
+            animation-duration: 8s;
+            z-index: 100;
+            animation-fill-mode: forwards;
+        }
+        .centeredtextintro {
+            font-family: sans-serif;
+            color: white;
+            font-size: 40px;
+            z-index: 100;
+            position: absolute;
+            top: 83%;
+            left: 41%;
+            -webkit-animation-name: introtext; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+            animation-name: introtext;
+            animation-duration: 8s;
+            transition-delay: 6s;
+            z-index: 100;
+            animation-fill-mode: forwards;
+        }
+        }
+
+        @media screen and  (min-height: 1600px) and  (max-width: 2560px){
+            .centeredtext {
+                font-family: sans-serif;
+                color: white;
+                font-size: 40px;
+                z-index: 100;
+                position: absolute;
+                top: 75%;
+                left: 43.3%;
+                -webkit-animation-name: intro; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+                animation-name: intro;
+                animation-duration: 8s;
+                z-index: 100;
+                animation-fill-mode: forwards;
+            }
+            .centeredtextintro {
+                font-family: sans-serif;
+                color: white;
+                z-index: 100;
+                position: absolute;
+                top: 83%;
+                left: 35.4%;
+                -webkit-animation-name: introtext; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+                animation-name: introtext;
+                animation-duration: 8s;
+                transition-delay: 6s;
+                z-index: 100;
+                animation-fill-mode: forwards;
+            }
+
+        }
+
+        .simplify {
+            color: #0f7699;
+        }
+
+        @-webkit-keyframes intro {
+            0%   {width: 25px; height: 25px; opacity: 0;}
+
+            100%   {width: 500px; height: 500px; opacity: 1;}
+        }
+
+        @keyframes intro {
+            0%   {width: 25px; height: 25px; opacity: 0;}
+
+            100%   {width: 500px; height: 500px; opacity: 1;}
+        }
+        @-webkit-keyframes introtext {
+            0%   {opacity: 0;}
+            50%   {opacity: 0;}
+            100%   {opacity: 1; color: white;}
+        }
+
+        @keyframes introtext {
+            0%   {opacity: 0;}
+            50%   {opacity: 0;}
+            100%   {opacity: 1; color: white;}
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="rute1">
+    <canvas id="canvas"></canvas>
+    <img width="250px" height="250px" class="centered" src="img/droplet%20png%20-%20uten%20transparency.png"/>
+    <h1 class="centeredtext" >DROPLET</h1>
+    <h1 class="centeredtextintro">SIMPLIFY THE <b class="simplify">BLOCKCHAIN</b></h1>
+    <script>
+        "use strict";
+
+        let canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d'),
+            w = canvas.width = window.innerWidth,
+            h = canvas.height = window.innerHeight,
+
+            hue = 217,
+            stars = [],
+            count = 0,
+            maxStars = 1400;
+
+
+        let canvas2 = document.createElement('canvas'),
+            ctx2 = canvas2.getContext('2d');
+        canvas2.width = 100;
+        canvas2.height = 100;
+        let half = canvas2.width/2,
+            gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+        gradient2.addColorStop(0.025, '#fff');
+        gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+        gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+        gradient2.addColorStop(1, 'transparent');
+
+        ctx2.fillStyle = gradient2;
+        ctx2.beginPath();
+        ctx2.arc(half, half, half, 0, Math.PI * 2);
+        ctx2.fill();
+
+        // End cache
+
+        function random(min, max) {
+            if (arguments.length < 2) {
+                max = min;
+                min = 0;
+            }
+
+            if (min > max) {
+                let hold = max;
+                max = min;
+                min = hold;
+            }
+
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function maxOrbit(x,y) {
+            let max = Math.max(x,y),
+                diameter = Math.round(Math.sqrt(max*max + max*max));
+            return diameter/2;
+        }
+
+        let Star = function() {
+
+            this.orbitRadius = random(maxOrbit(w,h));
+            this.radius = random(60, this.orbitRadius) / 12;
+            this.orbitX = w / 2;
+            this.orbitY = h / 2;
+            this.timePassed = random(0, maxStars);
+            this.speed = random(this.orbitRadius) / 5000000;
+            this.alpha = random(2, 10) / 10;
+
+            count++;
+            stars[count] = this;
+        }
+
+        Star.prototype.draw = function() {
+            let x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
+                y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
+                twinkle = random(10);
+
+            if (twinkle === 1 && this.alpha > 0) {
+                this.alpha -= 0.05;
+            } else if (twinkle === 2 && this.alpha < 1) {
+                this.alpha += 0.05;
+            }
+
+            ctx.globalAlpha = this.alpha;
+            ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+            this.timePassed += this.speed;
+        }
+
+        for (let i = 0; i < maxStars; i++) {
+            new Star();
+        }
+
+        function animation() {
+            ctx.globalCompositeOperation = 'source-over';
+            ctx.globalAlpha = 0.8;
+            ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
+            ctx.fillRect(0, 0, w, h)
+
+            ctx.globalCompositeOperation = 'lighter';
+            for (let i = 1, l = stars.length; i < l; i++) {
+                stars[i].draw();
+            };
+
+            window.requestAnimationFrame(animation);
+        }
+
+        animation();
+    </script>
+</div>
+
+</body>
+</html>
