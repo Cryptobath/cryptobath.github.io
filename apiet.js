@@ -9,19 +9,19 @@
                 "description" : "The ICO begins in late April, the amount of coins to sell is 4 million (40% of total supply).",
                 "funds": [
                     {
-                        "label" : "Blackrock Fund A",
+                        "label" : "1. time period",
                         "url" : "https://www.google.com",
-                        "shortlabel" : "ABC"
+                        "shortlabel" : "2million"
                     },
                     {
-                        "label" : "iShares Fund B",
+                        "label" : "2. time period",
                         "url" : "https://www.google.com",
-                        "shortlabel" : "ABC"
+                        "shortlabel" : "1million"
                     },
                     {
-                        "label" : "Blackrock Fund C",
+                        "label" : "3. time period",
                         "url" : "https://www.google.com",
-                        "shortlabel" : "ABC"
+                        "shortlabel" : "1million"
                     }
                 ]
             },
