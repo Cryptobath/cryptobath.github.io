@@ -10,6 +10,7 @@
                 "funds":[
                     {
                         "label" : "1. time period",
+                        "url" : "https://www.google.com",
                         "shortlabel" : "2million"
                     },
                     {
