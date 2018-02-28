@@ -6,7 +6,8 @@
                 "section": "ICO",
                 "value": 40,
                 "tagline" : "Amount of coins to sell in the ICO",
-                "description" : "The ICO begins in late April, the amount of coins to sell is 4 million (40% of total supply)." [
+                "description" : "The ICO begins in late April, the amount of coins to sell is 4 million (40% of total supply).",
+                "funds":[
                     {
                         "label" : "1. time period",
                         "url" : "https://www.google.com",
