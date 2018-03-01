@@ -31,21 +31,7 @@
                 "tagline" : "The amount of coins for marketing, payments and further development+testing.",
                 "description" : "The amount of coins held by the Team, will mainly be used for testings and to allow our Team to have strong voting power, usefull if someone tries to manipulate the voting system.",
                 "funds": [
-                    {
-                        "label" : "Blackrock Fund A",
-                        "url" : "https://www.google.com",
-                        "shortlabel" : "ABC"
-                    },
-                    {
-                        "label" : "iShares Fund B",
-                        "url" : "https://www.google.com",
-                        "shortlabel" : "ABC"
-                    },
-                    {
-                        "label" : "Blackrock Fund C",
-                        "url" : "https://www.google.com",
-                        "shortlabel" : "ABC"
-                    }
+                   
                 ]
             },
             {
