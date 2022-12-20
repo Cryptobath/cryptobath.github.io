@@ -1,0 +1,198 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>EnkelHverdag</title>
+        <style>
+    
+        html {
+            height: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+    
+        body {
+            background-color: red;
+            margin: 0;
+            min-height: 100%;
+            font-family: monospace;
+            
+        }
+    
+        button {
+            font-family: monospace;
+            border: none;
+            background: none;
+            height: 100%;
+            width: 100%;
+            float: left;
+        }
+    
+        h1 {
+            font-size: 55px;
+        }
+    
+        .active {
+            color: white;
+            border-bottom: 4px solid orangered;
+        }
+    
+        
+        #main-div {
+            position: fixed;
+            background-color: rgb(38, 70, 255);
+            height: 100%;
+            width: 100%;
+            transition: 3s;
+        }
+        /*
+        #main-div:hover {
+            position: fixed;
+            background-color: grey;
+            height: 100%;
+            width: 100%;
+            transition: 1s;
+        }
+        */
+        .pad {
+            position: relative;
+            background-color: white;
+            width: 42.5%;
+            margin-left: 5%;
+            margin-right: 0%;
+            margin-top: 3%;
+            height: 42.5%;
+            float: left;
+            transition: 1s;
+            border-radius: 80px;
+            text-align: center;
+        }
+    
+        #TopPad1 {
+            background-color: red;
+            color: white;
+        }
+    
+        #TopPad2 {
+            background-color: black;
+        }
+    
+        #BotPad1 {
+            margin-top: 2%;
+            margin-bottom: 5%;
+            background-color: orangered;
+            color: white;
+        }
+    
+        #BotPad2 {
+            margin-top: 2%;
+            margin-bottom: 5%;
+            background-color: rgb(12, 55, 150);
+        }
+    
+        
+        #TopPad1:hover {
+            background-color: darkred;
+            color: white;
+        }
+    
+        #TopPad2:hover {
+            background-color: rgb(124, 124, 124);
+        }
+    
+        #BotPad1:hover {
+            margin-top: 2%;
+            margin-bottom: 5%;
+            background-color: red;
+            color: white;
+        }
+    
+        #BotPad2:hover {
+            margin-top: 2%;
+            margin-bottom: 5%;
+            background-color: red;
+        }
+    
+    
+        /*
+        #main-div {
+            position: fixed;
+            background-color: black;
+            height: 65%;
+            width: 50%;
+            margin-right: 25%;
+            margin-left: 25%;
+            margin-top: 10%;
+            margin-bottom: 30%;
+            transition: 1s;
+            border-radius: 25px;
+        }
+        
+        #main-div:hover {
+            position: fixed;
+            background-color: blue;
+            height: 65%;
+            width: 50%;
+            margin-right: 25%;
+            margin-left: 25%;
+            margin-top: 10%;
+            margin-bottom: 30%;
+            transition: 1s;
+            border-radius: 25px;
+        }
+    
+        .pad {
+            position: relative;
+            background-color: white;
+            width: 40%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 5%;
+            height: 40%;
+            float: left;
+            transition: 1s;
+            border-radius: 50px;
+        }
+    
+        <div id="main-div">
+            <div id="TopPad1" class="pad">
+                <h1 style="margin-top:25%;">Dokumenter & Postboks</h1>
+            </div>
+    
+            <div id="TopPad2" class="pad">
+                <h1 style="margin-top:25%;">Matvarer & Matretter</h1>
+            </div>
+    
+            <div  id="BotPad1" class="pad">
+                <h1 style="margin-top:25%;">Finans & Pensjon</h1>
+            </div>
+            <div  id="BotPad2" class="pad">
+                <h1 style="margin-top:25%;">Helse & Medisiner</h1>
+            </div>
+        </div>
+    
+        */
+    
+        </style>
+    </head>
+    <body>
+        <div id="main-div">
+            <form action="" id="TopPad1" class="pad">
+                <button><h1 style="margin-top:5%;">SPAREBANK 1 NORDMØRE</h1></button>
+            </form>
+    
+            <form action="https://www.spk.no/" id="TopPad2" class="pad">
+                <button><h1 style="margin-top:5%; color: white;">STATENS PENSJONSKASSE</h1></button>
+            </form>
+    
+            <form action="https://www.nav.no/har-pensjon" id="BotPad1" class="pad">
+                <button><h1 style="margin-top:5%;">NAV-PENSJON OVERSIKT</h1></button>
+            </form>
+    
+            <form action="https://www.nav.no/utbetalingsdatoer/" id="BotPad2" class="pad">
+                <button><h1 style="margin-top:5%; color: white;">UTBETALINGSDATOER (NAV/PENSJON)</h1></button>
+            </form>
+        </div>
+    </body>
+    </html>
