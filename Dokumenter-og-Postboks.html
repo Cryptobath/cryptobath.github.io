@@ -40,12 +40,35 @@
 
     
     #main-div {
-        position: fixed;
         background-color: purple;
         height: 100%;
-        width: 100%;
+        width: 90%;
         transition: 3s;
+        float: right;
     }
+
+    #navbar-maindiv {
+        position: fixed;
+        background-color:grey;
+        height: 100%;
+        width: 10%;
+        transition: 1s;
+        float: left;
+        margin: 0;
+    }
+
+    #NavHomeButton {
+        background-color: darkblue;
+        height: 50%;
+        margin: 0;
+    }
+    
+    #NavBackButton {
+        background-color: blue;
+        height: 50%;
+        margin: 0;
+    }
+
     /*
     #main-div:hover {
         position: fixed;
@@ -81,7 +104,7 @@
     #BotPad1 {
         margin-top: 2%;
         margin-bottom: 5%;
-        background-color: orangered;
+        background-color: darkred;
         color: white;
     }
 
@@ -93,7 +116,7 @@
 
     
     #TopPad1:hover {
-        background-color: darkred;
+        background-color: rgb(255, 63, 63);
         color: white;
     }
 
@@ -111,7 +134,7 @@
     #BotPad2:hover {
         margin-top: 2%;
         margin-bottom: 5%;
-        background-color: red;
+        background-color: blue;
     }
 
 
@@ -177,9 +200,17 @@
     </style>
 </head>
 <body>
+    <div id="navbar-maindiv">
+        <form action="index.html" id="NavHomeButton">
+            <button><h1 style="color: white;">MENY</h1></button>
+        </form>
+        <form action="index.html" id="NavBackButton">
+            <button><h1 style="color: white;">BAK</h1></button>
+        </form>
+    </div>
     <div id="main-div">
         <form action="https://www.e-boks.com/norge/nb/logg-inn/" id="TopPad1" class="pad">
-            <button><h1 style="margin-top:5%;">E-BOKS</h1></button>
+            <button><h1 style="color: white; margin-top:5%;">E-BOKS</h1></button>
         </form>
 
         <form action="https://www.skatteetaten.no/min-side/" id="TopPad2" class="pad">
@@ -187,7 +218,7 @@
         </form>
 
         <form action="https://www.digipost.no/app/" id="BotPad1" class="pad">
-            <button><h1 style="margin-top:5%;">DIGIPOST</h1></button>
+            <button><h1 style="color: white; margin-top:5%;">DIGIPOST</h1></button>
         </form>
 
         <form action="https://www.altinn.no/" id="BotPad2" class="pad">

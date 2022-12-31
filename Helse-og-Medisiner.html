@@ -35,17 +35,40 @@
     
         .active {
             color: white;
-            border-bottom: 4px solid orangered;
+            border-bottom: 4px solid red;
         }
     
         
         #main-div {
-            position: fixed;
-            background-color: orangered;
-            height: 100%;
-            width: 100%;
-            transition: 3s;
-        }
+        background-color: red;
+        height: 100%;
+        width: 90%;
+        transition: 3s;
+        float: right;
+    }
+
+    #navbar-maindiv {
+        position: fixed;
+        background-color:grey;
+        height: 100%;
+        width: 10%;
+        transition: 1s;
+        float: left;
+        margin: 0;
+    }
+
+    #NavHomeButton {
+        background-color: darkblue;
+        height: 50%;
+        margin: 0;
+    }
+    
+    #NavBackButton {
+        background-color: blue;
+        height: 50%;
+        margin: 0;
+    }
+
         /*
         #main-div:hover {
             position: fixed;
@@ -70,18 +93,18 @@
         }
     
         #TopPad1 {
-            background-color: red;
+            background-color: #0d2880;
             color: white;
         }
     
         #TopPad2 {
-            background-color: black;
+            background-color: green;
         }
     
         #BotPad1 {
             margin-top: 2%;
             margin-bottom: 5%;
-            background-color: orangered;
+            background-color: rgb(27, 95, 196);
             color: white;
         }
     
@@ -93,25 +116,25 @@
     
         
         #TopPad1:hover {
-            background-color: darkred;
+            background-color: #1c43c0;
             color: white;
         }
     
         #TopPad2:hover {
-            background-color: rgb(124, 124, 124);
+            background-color: lightgreen;
         }
     
         #BotPad1:hover {
             margin-top: 2%;
             margin-bottom: 5%;
-            background-color: red;
-            color: white;
+            background-color: rgb(59, 131, 238);
+            color: black;
         }
     
         #BotPad2:hover {
             margin-top: 2%;
             margin-bottom: 5%;
-            background-color: red;
+            background-color: white;
         }
     
     
@@ -177,17 +200,31 @@
         </style>
     </head>
     <body>
+        <div id="navbar-maindiv">
+            <form action="index.html" id="NavHomeButton">
+                <button><h1 style="color: white;">MENY</h1></button>
+            </form>
+            <form action="index.html" id="NavBackButton">
+                <button><h1 style="color: white;">BAK</h1></button>
+            </form>
+        </div>
         <div id="main-div">
             <form action="https://www.apotek1.no/min-konto/kjop-reseptvarer" id="TopPad1" class="pad">
-                <button><h1 style="margin-top:5%;">APOTEK1 (Hjemlevering/bestilling)</h1></button>
+                <button><h1 style="margin-top:5%; color: white;">APOTEK1</h1>
+                        <p style="color: white; font-size: 45px; margin-bottom: -10%;">HJEMLEVERING / RESERVERING</p>
+                </button>
             </form>
     
             <form action="https://www.vitusapotek.no/bestill-medisiner" id="TopPad2" class="pad">
-                <button><h1 style="margin-top:5%; color: white;">VITUSAPOTEK (Hjemlevering/bestilling)</h1></button>
+                <button><h1 style="margin-top:5%; color: white;">VITUSAPOTEK</h1>
+                        <p style="color: white; font-size: 45px; margin-bottom: -10%;">HJEMLEVERING / RESERVERING</p>
+                </button>
             </form>
     
             <form action="https://www.helsenorge.no/pasientjournal" id="BotPad1" class="pad">
-                <button><h1 style="margin-top:5%;">PASIENTJOURNAL (resepter oversikt)</h1></button>
+                <button><h1 style="color: white; margin-top:5%;">PASIENTJOURNAL</h1>
+                        <p style="color: white; font-size: 50px; margin-bottom: -10%;">(HELSENORGE)</p>
+                </button>
             </form>
         </div>
     </body>

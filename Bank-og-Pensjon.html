@@ -39,13 +39,36 @@
         }
     
         
-        #main-div {
-            position: fixed;
-            background-color: rgb(38, 70, 255);
-            height: 100%;
-            width: 100%;
-            transition: 3s;
-        }
+    #main-div {
+        background-color: rgb(38, 70, 255);
+        height: 100%;
+        width: 90%;
+        transition: 3s;
+        float: right;
+    }
+
+    #navbar-maindiv {
+        position: fixed;
+        background-color:grey;
+        height: 100%;
+        width: 10%;
+        transition: 1s;
+        float: left;
+        margin: 0;
+    }
+
+    #NavHomeButton {
+        background-color: darkblue;
+        height: 50%;
+        margin: 0;
+    }
+    
+    #NavBackButton {
+        background-color: blue;
+        height: 50%;
+        margin: 0;
+    }
+
         /*
         #main-div:hover {
             position: fixed;
@@ -70,7 +93,7 @@
         }
     
         #TopPad1 {
-            background-color: red;
+            background-color: darkblue;
             color: white;
         }
     
@@ -81,7 +104,7 @@
         #BotPad1 {
             margin-top: 2%;
             margin-bottom: 5%;
-            background-color: orangered;
+            background-color: red;
             color: white;
         }
     
@@ -93,7 +116,7 @@
     
         
         #TopPad1:hover {
-            background-color: darkred;
+            background-color: blue;
             color: white;
         }
     
@@ -104,7 +127,7 @@
         #BotPad1:hover {
             margin-top: 2%;
             margin-bottom: 5%;
-            background-color: red;
+            background-color: pink;
             color: white;
         }
     
@@ -177,21 +200,38 @@
         </style>
     </head>
     <body>
+        <div id="navbar-maindiv">
+            <form action="index.html" id="NavHomeButton">
+                <button><h1 style="color: white;">MENY</h1></button>
+            </form>
+            <form action="index.html" id="NavBackButton">
+                <button><h1 style="color: white;">BAK</h1></button>
+            </form>
+        </div>
         <div id="main-div">
-            <form action="" id="TopPad1" class="pad">
-                <button><h1 style="margin-top:5%;">SPAREBANK 1 NORDMØRE</h1></button>
+            <form action="https://www.sparebank1.no/nb/nordmore/privat/innlogging.html" id="TopPad1" class="pad">
+                <button><h1 style="margin-left: 30%; float: left; margin-top:5%; color: white;">SPAREBANK</h1>
+                        <h1 style="margin-top: 5%; margin-left: 2%; float: left; color: red;">1</h1>
+                        <p style="color: white; font-size: 50px;">NORDMØRE</p>
+                </button>
             </form>
     
             <form action="https://www.spk.no/" id="TopPad2" class="pad">
-                <button><h1 style="margin-top:5%; color: white;">STATENS PENSJONSKASSE</h1></button>
+                <button><h1 style="margin-top:5%; color: white;">STATENS PENSJONSKASSE</h1>
+                        <h1 style="color: white; font-size: 50px; margin-bottom: -10%;">SPK.NO</h1>
+                </button>
             </form>
     
             <form action="https://www.nav.no/har-pensjon" id="BotPad1" class="pad">
-                <button><h1 style="margin-top:5%;">NAV-PENSJON OVERSIKT</h1></button>
+                <button><h1 style="color: white; margin-top:5%;">NAV-PENSJON</h1>
+                        <h1 style="color: white; font-size: 50px; margin-bottom: -10%;">OVERSIKT</h1>
+                </button>
             </form>
     
             <form action="https://www.nav.no/utbetalingsdatoer/" id="BotPad2" class="pad">
-                <button><h1 style="margin-top:5%; color: white;">UTBETALINGSDATOER (NAV/PENSJON)</h1></button>
+                <button><h1 style="margin-top:5%; color: white;">UTBETALINGSDATOER</h1>
+                        <p style="color: white; font-size: 50px; margin-bottom: -10%;">(NAV/PENSJON)</p>
+                </button>
             </form>
         </div>
     </body>
