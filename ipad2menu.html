@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>EnkelHverdag</title>
+        <title>iPadMenu</title>
         <style>
     
         html {
@@ -30,7 +30,7 @@
         }
     
         h1 {
-            font-size: 55px;
+            font-size: 50px;
         }
     
         .active {
@@ -86,13 +86,13 @@
             background-color: rgb(38, 70, 255);
             color: white;
         }
-    
+    /*
         #BotPad2 {
             margin-top: 2%;
             margin-bottom: 5%;
             background-color: red;
         }
-    
+    */
         
         #TopPad1:hover {
             background-color: darkviolet;
@@ -109,32 +109,29 @@
             background-color: rgb(74, 102, 255);
             color: white;
         }
-    
+    /*
         #BotPad2:hover {
             margin-top: 2%;
             margin-bottom: 5%;
             background-color: red;
         }
-        
+*/
     
         </style>
     </head>
     <body>
         <div id="main-div">
-            <form action="Dokumenter-og-Postboks.html" id="TopPad1" class="pad">
-                <button><h1 style="margin-top:5%; color: white;">DOKUMENTER & POSTBOKSER</h1></button>
+            <form action="https://outlook.live.com/calendar/published/c07a1216-de4b-420c-856a-cbd4f53039ba/e28d8014-9ae7-4eb0-a3eb-824ff761d541/cid-6DFC74F037CE4712/calendar.html" id="TopPad1" class="pad">
+                <button><h1 style="margin-top:5%; color: white;">SE KALENDER</h1>
+                </button>
             </form>
     
-            <form action="Matvarer-og-Matretter.html" id="TopPad2" class="pad">
-                <button><h1 style="color: white; margin-top:5%;">MATVARER & MATRETTER</h1></button>
+            <form action="https://bestille.norgestaxi.no/no" id="TopPad2" class="pad">
+                <button><h1 style="color: white; margin-top:5%;">BESTILL TRANSPORT</h1></button> <!--LOGG INN I NORGESTAXI SÅ ADRESSEN ER DER FRA FØR PÅ IPADEN-->
             </form>
     
-            <form action="Bank-og-Pensjon.html" id="BotPad1" class="pad">
-                <button><h1 style="margin-top:5%; color: white;">BANK & PENSJON</h1></button>
-            </form>
-    
-            <form action="Helse-og-Medisiner.html" id="BotPad2" class="pad">
-                <button><h1 style="color: white; margin-top:5%;">HELSE & MEDISINER</h1></button>
+            <form action="mailto:ankomstveddoora@oabi.pro" method="send" id="BotPad1" class="pad" style="width: 90%;">
+                <button><h1 style="margin-top:5%; color: white; font-size: 70px;">VARSLE ANKOMST</h1></button> <!--LOGG INN I MAILEN PÅ IPADEN FØRST (ANKOMSTVEDDOORA@OABI.PRO, SÅ HAVNER ALLE ANKOMST MAIL PÅ SAMME KONTO)-->
             </form>
         </div>
     </body>
