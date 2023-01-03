@@ -40,12 +40,29 @@
 
     
     #main-div {
-        position: fixed;
         background-color: black;
         height: 100%;
-        width: 100%;
+        width: 90%;
         transition: 1s;
+        float: right;
     }
+
+    
+#navbar-maindiv {
+    position: fixed;
+    background-color:grey;
+    height: 100%;
+    width: 10%;
+    transition: 1s;
+    float: left;
+    margin: 0;
+}
+
+#NavHomeButton {
+    background-color: darkblue;
+    height: 100%;
+    margin: 0;
+}
 
 
     /*
@@ -116,7 +133,6 @@
         background-color: red;
     }
 
-
     /*
     #main-div {
         position: fixed;
@@ -179,6 +195,20 @@
     </style>
 </head>
 <body>
+    <div id="navbar-maindiv">
+        <form action="Tjenester.html" id="NavHomeButton">
+            <button><h1 style="color: white;">T</h1>
+                    <h1 style="color: white;">J</h1>
+                    <h1 style="color: white;">E</h1>
+                    <h1 style="color: white;">N</h1>
+                    <h1 style="color: white;">E</h1>
+                    <h1 style="color: white;">S</h1>
+                    <h1 style="color: white;">T</h1>
+                    <h1 style="color: white;">E</h1>
+                    <h1 style="color: white;">R</h1>
+            </button>
+        </form>
+    </div>
     <div id="main-div">
         <form action="Dokumenter-og-Postboks.html" id="TopPad1" class="pad">
             <button><h1 style="margin-top:5%; color: white;">DOKUMENTER & POSTBOKSER</h1></button>
